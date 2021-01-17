@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest",
     "webdev": "webpack serve --config config/webpack.config.dev.js",
+    "verceldev": "vercel dev",
     "build": "webpack --config config/webpack.config.prod.js"
   },
   "repository": {
