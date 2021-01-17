@@ -1,6 +1,86 @@
+@use './styles/themes';
+@font-face {
+  font-family: 'Ubuntu';
+  src: local('Ubuntu'),
+    url(./assets/fonts/Ubuntu-Regular.ttf) format('truetype');
+}
+
 * {
   box-sizing: border-box;
 }
+html,
 body {
-  background: #7dd;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg);
+  color: var(--font);
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+button {
+  min-width: 3em;
+  min-height: 3em;
+  cursor: pointer;
+}
+svg {
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0 0.3rem;
+  color: var(--font);
+}
+.separator {
+  flex: 1 1 auto;
+}
+.button-block {
+  width: 100%;
+}
+.button-primary {
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  line-height: 1.3rem;
+  border-radius: 4px;
+  background: var(--color-primary);
+  color: var(--font);
+}
+.button-flat {
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  line-height: 1.3rem;
+  border-radius: 4px;
+  background: transparent;
+  color: currentColor;
+  opacity: 0.8;
+}
+.button-flat:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.07);
+}
+.button-disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.link {
+  opacity: 0.8;
+  transition: opacity 150ms ease;
+  color: var(--color-secondary);
+}
+.link:hover {
+  opacity: 1;
+  text-decoration: underline;
 }

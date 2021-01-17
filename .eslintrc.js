@@ -4,6 +4,13 @@ module.exports = {
     es2021: true,
     node: true,
   },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
+  },
   extends: ['airbnb-base'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -13,6 +20,15 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   rules: {
     'import/no-extraneous-dependencies': 'off',
+    'import/extensions': [
+      1,
+      {
+        js: 'never',
+        ts: 'never',
+        jsx: 'never',
+        tsx: 'never',
+      },
+    ],
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
   },

@@ -1,9 +1,15 @@
 import { NowRequest, NowResponse } from '@vercel/node';
+import { connectDB } from '../utils';
 
-export default (request: NowRequest, response: NowResponse) => {
+export default async (request: NowRequest, response: NowResponse) => {
+  const { db } = await connectDB();
+  const today = new Date().toLocaleString();
+
+  const data = await db.collection('users').find({}).toArray();
+
   response.status(200).json({
     ok: true,
-    data:
-      'This is the first message send from vanilla portfolio with vercel serverless',
+    data,
+    date: today,
   });
 };
