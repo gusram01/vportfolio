@@ -2,6 +2,10 @@
 @use './styles/loading';
 @use './styles/card';
 @use './styles/form';
+@use './styles/buttons';
+@use './styles/header';
+@use './styles/projects';
+@use './styles/footer';
 
 @font-face {
   font-family: 'Ubuntu';
@@ -28,11 +32,7 @@ a,
 a:visited {
   text-decoration: none;
 }
-button {
-  min-width: 2em;
-  min-height: 2em;
-  cursor: pointer;
-}
+
 svg {
   width: 1.5em;
   height: 1.5em;
@@ -42,45 +42,9 @@ svg {
 .separator {
   flex: 1 1 auto;
 }
-.button-block {
-  width: 100%;
-}
-.button-primary {
-  cursor: pointer;
-  font-size: 0.9rem;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  border: none;
-  outline: none;
-  line-height: 1.3rem;
-  border-radius: 4px;
-  background: var(--color-primary);
-  color: var(--font);
-}
-.button-flat {
-  cursor: pointer;
-  font-size: 0.9rem;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  border: none;
-  outline: none;
-  line-height: 1.3rem;
-  border-radius: 4px;
-  background: transparent;
-  color: currentColor;
-  opacity: 0.8;
-}
-.button-flat:hover {
-  opacity: 1;
-  background: rgba(0, 0, 0, 0.07);
-}
-.button-disabled {
-  opacity: 0.4;
-  pointer-events: none;
-}
+
 .icon {
   font-size: 1.4em;
-  margin: auto;
   padding: 0.5em;
 }
 .link {

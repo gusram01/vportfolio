@@ -10,16 +10,35 @@
     <title>@gusram01</title>
   </head>
   <body class="dark-theme">
-    <header>
-      <div class="title">
-        <h1>Gus Ramírez</h1>
-        <h2>Front-end / Backend - dev</h2>
+    <header class="header">
+      <div class="header__content">
+        <div class="title">
+          <h1>Gus Ramírez</h1>
+          <h2>Front-end / Backend - dev</h2>
+        </div>
+        <span class="separator"></span>
+
+        <button type="button" class="btn" id="dark-theme"></button>
       </div>
       <nav></nav>
-      <button type="button" class="button" id="dark-theme"></button>
     </header>
+
     <main>
-      <section class="about">
+      <!--   Section Projects    -->
+      <section class="projects" id="projects">
+        <div class="card">
+          <div class="card__header">
+            <div class="card__avatar">
+              <i class="icon fas fa-file-code"></i>
+            </div>
+            <h3 class="card__title">Projects</h3>
+          </div>
+          <div class="card__content" id="projects-container"></div>
+        </div>
+      </section>
+
+      <!--   Section About    -->
+      <section class="about" id="about">
         <article class="card">
           <div class="card__header">
             <div class="card__avatar">
@@ -55,11 +74,13 @@
           </div>
         </article>
       </section>
-      <section class="contact">
+
+      <!--   Section Contact    -->
+      <section class="contact" id="contact">
         <article class="card">
           <div class="card__header">
             <div class="card__avatar">
-              <i class="icon fas fa-envelope"></i>
+              <i class="icon fas fa-mail-bulk"></i>
             </div>
             <h3 class="card__title">Contact me</h3>
           </div>
@@ -81,11 +102,16 @@
                   aria-label="message"
                   spellcheck="true"
                   maxlength="124"
+                  rows="3"
                 ></textarea>
                 <label htmlFor="msg">Message</label>
                 <p></p>
               </div>
-              <button type="submit">Send</button>
+              <input
+                class="btn button-outline primary"
+                type="submit"
+                value="Send"
+              />
             </form>
           </div>
         </article>
@@ -93,5 +119,20 @@
     </main>
 
     <!-- <div class="loading" id="loader"></div> -->
+
+    <footer class="footer">
+      <span class="footer__legend" id="legend"> </span>
+      <div class="footer__links">
+        <button class="footer__link btn button-fab secondary">
+          <i class="icon fab fa-linkedin"></i>
+        </button>
+        <button class="footer__link btn button-fab secondary">
+          <i class="icon fab fa-github"></i>
+        </button>
+        <button class="footer__link btn button-fab secondary">
+          <i class="icon fab fa-twitter"></i>
+        </button>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,31 @@
+.header {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  .header__content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 250px;
+    width: 86%;
+    height: 100%;
+    margin: 0 auto;
+    .title {
+      padding: 0 0 24px;
+      h1,
+      h2 {
+        margin: 0;
+        font-weight: 500;
+      }
+      h1 {
+        font-size: 1.7em;
+        line-height: 1.9em;
+      }
+      h2 {
+        font-size: 1.2em;
+        line-height: 1.4em;
+        opacity: 0.85;
+      }
+    }
+  }
+}

@@ -128,6 +128,7 @@
     calc(var(--lumin-primary-light) * 1%),
     calc(var(--alpha-primary-light) * 1%)
   );
+
   --color-secondary: hsla(
     var(--hue-secondary-light),
     calc(var(--sat-secondary-light) * 1%),

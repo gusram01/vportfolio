@@ -13,19 +13,18 @@
     grid-template-columns: 3em 1fr;
     grid-template-areas:
       'avatar title'
-      '. subtitle';
-    align-items: stretch;
-    justify-content: flex-start;
+      'avatar subtitle';
+    align-items: baseline;
     width: 100%;
     & > * {
       display: flex;
+      margin: 0;
     }
   }
   .card__title,
   .card__subtitle {
     width: 100%;
-    margin: auto;
-    padding: 0 0 0 4%;
+    padding: 0 0 0 2.5%;
     color: currentColor;
   }
   .card__title {
@@ -37,9 +36,10 @@
     opacity: 0.8;
     font-size: 1.2em;
   }
+
   .card__avatar {
     grid-area: avatar;
-    margin: auto;
+    align-items: stretch;
   }
   .card__avatar > img {
     max-width: 100%;

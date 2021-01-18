@@ -1,14 +1,10 @@
 import emailPattern from '../helpers/emailPattern';
+import { FormInfo } from '../interfaces';
 
 const form = document.getElementById('form-contact') as HTMLFormElement;
-
-interface FormInfo {
-  [key: string]: string | boolean | any[];
-  pristine: boolean;
-  valid: boolean;
-  errors: Array<any>;
-  controls: Array<any>;
-}
+const name = form.elements.namedItem('name') as HTMLInputElement;
+const email = form.elements.namedItem('email') as HTMLInputElement;
+const msg = form.elements.namedItem('msg') as HTMLInputElement;
 
 const formInfo: FormInfo = {
   pristine: true,
@@ -16,9 +12,6 @@ const formInfo: FormInfo = {
   errors: [],
   controls: [],
 };
-const name = form.elements.namedItem('name') as HTMLInputElement;
-const email = form.elements.namedItem('email') as HTMLInputElement;
-const msg = form.elements.namedItem('msg') as HTMLInputElement;
 
 const handleSubmit = (e: Event) => {
   e.preventDefault();
@@ -29,6 +22,7 @@ const handleSubmit = (e: Event) => {
   console.log(formInfo.controls);
 };
 
+// eslint-disable-next-line no-unused-vars
 function validity(this: any) {
   const aux = formInfo.errors.find((item) => item.name === this.name);
   const control = formInfo.controls.find((item) => item.name === this.name);

@@ -1,3 +1,6 @@
+.form {
+  width: 100%;
+}
 .form__field {
   position: relative;
   display: flex;
@@ -10,11 +13,14 @@
   textarea {
     border: none;
     outline: none;
-    font-size: 0.9rem;
+    // font-size: 0.9rem;
     padding: 1.5em 0.7em 0.5em;
     border-radius: 5px 5px 0 0;
     background: var(--bg1);
     color: currentColor;
+  }
+  textarea {
+    resize: none;
   }
   input:focus,
   input:active,

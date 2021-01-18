@@ -20,6 +20,7 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   rules: {
     'import/no-extraneous-dependencies': 'off',
+    'import/prefer-default-export': 'off',
     'import/extensions': [
       1,
       {
