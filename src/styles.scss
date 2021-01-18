@@ -1,4 +1,8 @@
 @use './styles/themes';
+@use './styles/loading';
+@use './styles/card';
+@use './styles/form';
+
 @font-face {
   font-family: 'Ubuntu';
   src: local('Ubuntu'),
@@ -25,8 +29,8 @@ a:visited {
   text-decoration: none;
 }
 button {
-  min-width: 3em;
-  min-height: 3em;
+  min-width: 2em;
+  min-height: 2em;
   cursor: pointer;
 }
 svg {
@@ -74,7 +78,11 @@ svg {
   opacity: 0.4;
   pointer-events: none;
 }
-
+.icon {
+  font-size: 1.4em;
+  margin: auto;
+  padding: 0.5em;
+}
 .link {
   opacity: 0.8;
   transition: opacity 150ms ease;

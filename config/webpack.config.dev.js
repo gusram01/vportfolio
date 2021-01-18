@@ -45,7 +45,7 @@ module.exports = {
             },
           },
         ],
-        exclude: [/node_modules/, /dist/],
+        exclude: [/node_modules/, /public/, /__mocks__/, /tests/],
       },
 
       {
