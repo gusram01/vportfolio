@@ -18,18 +18,20 @@ const render = async () => {
   const container = document.getElementById('projects-container');
   const fragment = document.createDocumentFragment();
 
-  getData().then((data) => {
-    transformData(data)
-      .map(procesProject)
-      .forEach((item: any) => {
-        const article = document.createElement('article');
-        article.classList.add('card');
-        article.innerHTML = item;
-        fragment.appendChild(article);
-      });
+  getData()
+    .then((data) => {
+      transformData(data)
+        .map(procesProject)
+        .forEach((item: any) => {
+          const article = document.createElement('article');
+          article.classList.add('card');
+          article.innerHTML = item;
+          fragment.appendChild(article);
+        });
 
-    container?.appendChild(fragment.cloneNode(true));
-  });
+      container?.appendChild(fragment.cloneNode(true));
+    })
+    .catch(console.error);
 };
 
 export { render };

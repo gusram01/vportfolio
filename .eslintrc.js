@@ -19,6 +19,8 @@ module.exports = {
   },
   plugins: ['@typescript-eslint'],
   rules: {
+    'implicit-arrow-linebreak': 'off',
+    'no-return-assign': 'off',
     'import/no-extraneous-dependencies': 'off',
     'import/prefer-default-export': 'off',
     'import/extensions': [
