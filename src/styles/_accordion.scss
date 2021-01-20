@@ -1,0 +1,49 @@
+.accordion {
+  width: 100%;
+  .accordion__label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 4px auto 1em;
+    padding: 1em 2em;
+    font-size: small;
+    font-style: oblique;
+    border-radius: 5px;
+    background: var(--bg2);
+    color: var(--color-primary);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: help;
+  }
+  .accordion__label.active {
+    color: var(--color-danger);
+  }
+  .accordion__label:after {
+    content: '+';
+    position: absolute;
+    top: 7.5%;
+    right: 10%;
+    font-size: 2em;
+    font-weight: 700;
+  }
+  .accordion__label.active:after {
+    content: '-';
+  }
+  .accordion__content {
+    height: 0;
+    transform-origin: top;
+    transform: scaleY(0);
+    overflow: hidden;
+    border-radius: 5px;
+    background: var(--bg1);
+  }
+  .accordion__content.active {
+    height: auto;
+    padding: 1em;
+    transform: scaleY(1);
+    transition: transform 100ms ease-in;
+  }
+}

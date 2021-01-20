@@ -1,5 +1,5 @@
 import { getData } from './getData';
-import { getString } from './getString';
+import { getProjectString } from './getProjectString';
 import { renderProjects } from './renderProjects';
 
-export { getString, getData, renderProjects };
+export { getProjectString, getData, renderProjects };

@@ -20,8 +20,11 @@ theme(darky);
 onSubmit();
 getTools(tools);
 renderProjects()
-  .then((fragment) => projects.appendChild(fragment!.cloneNode(true)))
-  .catch();
+  .then((obj) => {
+    projects.appendChild(obj!.fragment.cloneNode(true));
+    obj!.accordionListeners.forEach((item) => item());
+  })
+  .catch(console.error);
 getLegend();
 
 export { onSubmit, theme };
