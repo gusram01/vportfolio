@@ -7,9 +7,9 @@ const procesProject = ({ title, abstract, description, techs }: any) => `
           <h4 class="card__title">${title}</h4>
         </div>
         <div class="card__content">
-          <section>
+          <p>
           ${abstract}
-          </section>
+          </p>
           <p>${description}</p>
           <code>${JSON.stringify(techs, null, 2)} </code>
         </div>`;

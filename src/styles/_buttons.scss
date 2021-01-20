@@ -1,10 +1,8 @@
-.btn {
+.btn,
+.link {
   min-width: 2em;
   min-height: 2em;
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  line-height: 1.3rem;
+  padding: 0.5em 1em;
   border: none;
   border-radius: 4px;
   outline: none;
@@ -12,6 +10,22 @@
   background: transparent;
   color: currentColor;
   cursor: pointer;
+}
+.btn {
+  font-size: 0.9em;
+  font-weight: 600;
+  line-height: 1.3em;
+}
+.link {
+  font-weight: 600;
+}
+.link:visited {
+  color: currentColor;
+}
+.link:hover,
+.link:focus {
+  opacity: 1;
+  text-decoration: underline;
 }
 .btn:hover {
   opacity: 1;
@@ -45,13 +59,16 @@
   pointer-events: none;
 }
 
-.btn.primary {
+.btn.primary,
+.link.primary {
   color: var(--color-primary);
 }
 
-.btn.secondary {
+.btn.secondary,
+.link.secondary {
   color: var(--color-secondary);
 }
-.btn.danger {
+.btn.danger,
+.link.danger {
   color: var(--color-danger);
 }

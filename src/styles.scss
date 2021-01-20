@@ -4,7 +4,9 @@
 @use './styles/form';
 @use './styles/buttons';
 @use './styles/header';
+@use './styles/tools';
 @use './styles/projects';
+@use './styles/aboutcontact';
 @use './styles/footer';
 
 @font-face {
@@ -46,13 +48,4 @@ svg {
 .icon {
   font-size: 1.4em;
   padding: 0.5em;
-}
-.link {
-  opacity: 0.8;
-  transition: opacity 150ms ease;
-  color: var(--color-secondary);
-}
-.link:hover {
-  opacity: 1;
-  text-decoration: underline;
 }

@@ -37,82 +37,204 @@
         </div>
       </section>
 
-      <!--   Section About    -->
-      <section class="about" id="about">
+      <div class="about-contact-container">
+        <!--   Section About    -->
+        <section class="about" id="about">
+          <article class="card">
+            <div class="card__header">
+              <div class="card__avatar">
+                <i class="icon fas fa-user-alt"></i>
+              </div>
+              <h3 class="card__title">About</h3>
+            </div>
+            <div class="card__content">
+              <p>
+                I&apos;ve been working in sales for almost half my life, but
+                once I wrote my first &apos;Hello World&apos; I fell in love
+                with coding...
+              </p>
+              <p>
+                JavaScript is my core language, but in the beginning I started
+                with Java. Within
+                <em>
+                  <a
+                    class="link primary"
+                    href="https://platzi.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Platzi
+                  </a>
+                </em>
+                I discovered Python, C, C#, Go, PHP and many more...
+              </p>
+              <p>
+                Right now I&apos;m looking for my first work as a dev... so take
+                a look and contact me anytime 😉
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <!--   Section Contact    -->
+        <section class="contact" id="contact">
+          <article class="card">
+            <div class="card__header">
+              <div class="card__avatar">
+                <i class="icon fas fa-mail-bulk"></i>
+              </div>
+              <h3 class="card__title">Contact me</h3>
+            </div>
+            <div class="card__content">
+              <form class="form" id="form-contact">
+                <div class="form__field">
+                  <input type="text" name="name" aria-label="name" />
+                  <label for="name">Name</label>
+                  <p></p>
+                </div>
+                <div class="form__field">
+                  <input type="email" name="email" aria-label="email" />
+                  <label for="email">Email</label>
+                  <p></p>
+                </div>
+                <div class="form__field">
+                  <textarea
+                    name="msg"
+                    aria-label="message"
+                    spellcheck="true"
+                    maxlength="124"
+                    rows="3"
+                  ></textarea>
+                  <label htmlFor="msg">Message</label>
+                  <p></p>
+                </div>
+                <input
+                  class="btn button-outline primary"
+                  type="submit"
+                  value="Send"
+                />
+              </form>
+            </div>
+          </article>
+        </section>
+      </div>
+
+      <!--   Section Skills    -->
+      <section class="tools">
         <article class="card">
           <div class="card__header">
             <div class="card__avatar">
-              <i class="icon fas fa-user-alt"></i>
+              <i class="icon fas fa-tools"></i>
             </div>
-            <h3 class="card__title">About</h3>
+            <h3 class="card__title">Work with</h3>
           </div>
           <div class="card__content">
-            <p>
-              I&apos;ve been working in sales for almost half my life, but once
-              I wrote my first &apos;Hello World&apos; I fell in love with
-              coding...
-            </p>
-            <p>
-              JavaScript is my core language, but in the beginning I started
-              with Java. Within
-              <em>
-                <a
-                  className="link font-primary"
-                  href="https://platzi.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Platzi
-                </a>
-              </em>
-              I discovered Python, C, C#, Go, PHP and many more...
-            </p>
-            <p>
-              Right now I&apos;m looking for my first work as a dev... so take a
-              look and contact me anytime 😉
-            </p>
+            <div class="tools__container">
+              <div class="tools-inside move" id="tools"></div>
+            </div>
           </div>
         </article>
       </section>
 
-      <!--   Section Contact    -->
-      <section class="contact" id="contact">
+      <!--   Section Education    -->
+      <section class="education" id="education">
+        <div class="card">
+          <div class="card__header">
+            <div class="card__avatar">
+              <i class="icon fas fa-user-graduate"></i>
+            </div>
+            <h3 class="card__title">Education</h3>
+          </div>
+          <div class="card__content">
+            <!--   Platzi    -->
+            <article class="card">
+              <div class="card__header">
+                <h3 class="card__title">Platzi</h3>
+                <h4 class="card__subtitle">Front-end / Backend dev</h4>
+              </div>
+              <div class="card__content">
+                <p>Within Platzi I want to become a software dev</p>
+              </div>
+              <a
+                href="https://platzi.com/p/gusram01/"
+                class="link btn primary"
+                rel="noreferrer"
+                target="_blank"
+                >Platzi</a
+              >
+            </article>
+
+            <!--   Udemy JS    -->
+            <article class="card">
+              <div class="card__header">
+                <h3 class="card__title">Udemy</h3>
+                <h4 class="card__subtitle">Javascript dev</h4>
+              </div>
+              <div class="card__content">
+                <p>
+                  Javascript is essential to understand web development, for me
+                  it is a must. Work with this language is work in almost all
+                  places. I was able to learn not only for VanillaJS but also
+                  from NodeJS, Angular, Vue, React, Next, Ionic, MongoDB and
+                  many more...
+                </p>
+              </div>
+              <a
+                href="https://udemy.com"
+                class="link btn primary"
+                rel="noreferrer"
+                target="_blank"
+                >Udemy</a
+              >
+            </article>
+
+            <!--   Udemy tsc    -->
+            <article class="card">
+              <div class="card__header">
+                <h3 class="card__title">Udemy</h3>
+                <h4 class="card__subtitle">Typescript dev</h4>
+              </div>
+              <div class="card__content">
+                <p>
+                  I acquired Typescript knowledge from the basics to the
+                  toughest concepts
+                </p>
+              </div>
+              <a
+                href="https://udemy.com"
+                class="link btn primary"
+                rel="noreferrer"
+                target="_blank"
+                >Udemy</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--   Section Experience    -->
+      <section class="experience" id="experience">
         <article class="card">
           <div class="card__header">
             <div class="card__avatar">
-              <i class="icon fas fa-mail-bulk"></i>
+              <i class="icon fas fa-user-tie"></i>
             </div>
-            <h3 class="card__title">Contact me</h3>
+            <h3 class="card__title">Experience</h3>
           </div>
           <div class="card__content">
-            <form class="form" id="form-contact">
-              <div class="form__field">
-                <input type="text" name="name" aria-label="name" />
-                <label for="name">Name</label>
-                <p></p>
-              </div>
-              <div class="form__field">
-                <input type="email" name="email" aria-label="email" />
-                <label for="email">Email</label>
-                <p></p>
-              </div>
-              <div class="form__field">
-                <textarea
-                  name="msg"
-                  aria-label="message"
-                  spellcheck="true"
-                  maxlength="124"
-                  rows="3"
-                ></textarea>
-                <label htmlFor="msg">Message</label>
-                <p></p>
-              </div>
-              <input
-                class="btn button-outline primary"
-                type="submit"
-                value="Send"
-              />
-            </form>
+            <p>
+              I am looking for my first job as a developer... I worked almost
+              half of my life in sales and I have experience in managing sales
+              teams for 4 to 12 members, staff training, customer service and
+              expertise in the field of retail credit.
+            </p>
+            <a
+              href="#"
+              class="link btn primary"
+              rel="noreferrer"
+              target="_blank"
+              >Get a copy of my resume</a
+            >
           </div>
         </article>
       </section>
@@ -123,15 +245,32 @@
     <footer class="footer">
       <span class="footer__legend" id="legend"> </span>
       <div class="footer__links">
-        <button class="footer__link btn button-fab secondary">
-          <i class="icon fab fa-linkedin"></i>
-        </button>
-        <button class="footer__link btn button-fab secondary">
-          <i class="icon fab fa-github"></i>
-        </button>
-        <button class="footer__link btn button-fab secondary">
+        <a
+          href="https://www.linkedin.com/in/gustavo-cesar-ramirez/?locale=en_US"
+          class="footer__link link button-fab secondary"
+          rel="noreferrer"
+          target="_blank"
+        >
           <i class="icon fab fa-twitter"></i>
-        </button>
+        </a>
+
+        <a
+          href="https://github.com/gusram01"
+          class="footer__link link button-fab secondary"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <i class="icon fab fa-github"></i>
+        </a>
+
+        <a
+          href="https://twitter.com/GusGusdev"
+          class="footer__link link button-fab secondary"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <i class="icon fab fa-linkedin"></i>
+        </a>
       </div>
     </footer>
   </body>

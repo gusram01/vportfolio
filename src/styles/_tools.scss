@@ -1,0 +1,73 @@
+@for $i from 1 to 19 {
+  .tool:nth-child(#{$i}) {
+    transform: rotateY($i * (360/18) * 1deg) translateZ(380px);
+  }
+}
+
+.tools__container {
+  width: 90%;
+  min-height: 150px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  perspective: 1500px;
+  overflow: hidden;
+  .tools-inside {
+    position: relative;
+    width: 350px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 1.5em 0;
+    transform-style: preserve-3d;
+  }
+  .tool {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    svg {
+      width: 85px;
+      height: 85px;
+    }
+  }
+}
+
+.move {
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: move;
+  animation-name: move;
+}
+.paused {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@-webkit-keyframes move {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
