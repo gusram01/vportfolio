@@ -30,6 +30,7 @@ module.exports = {
         ts: 'never',
         jsx: 'never',
         tsx: 'never',
+        png: 'never',
       },
     ],
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',

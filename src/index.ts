@@ -1,5 +1,6 @@
 import './styles.scss';
 import './assets/fonts/Ubuntu-Regular.ttf';
+import './assets/platzi.png';
 // import loading from './ts/loading';
 import { theme } from './services/theme';
 import { onSubmit, formInfo } from './ts/form';

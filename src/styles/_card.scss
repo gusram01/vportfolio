@@ -13,8 +13,8 @@
     grid-template-columns: 3em 1fr;
     grid-template-areas:
       'avatar title'
-      'avatar subtitle';
-    align-items: baseline;
+      '. subtitle';
+
     width: 100%;
     & > * {
       display: flex;
@@ -29,6 +29,7 @@
   }
   .card__title {
     grid-area: title;
+    align-items: center;
     font-size: 1.4em;
   }
   .card__subtitle {
@@ -39,10 +40,16 @@
 
   .card__avatar {
     grid-area: avatar;
-    align-items: stretch;
+
+    img {
+      max-width: 100%;
+    }
   }
-  .card__avatar > img {
-    max-width: 100%;
+  a.icon {
+    padding: 0;
+    svg {
+      margin: auto;
+    }
   }
 
   .card__content {
@@ -58,6 +65,7 @@
     p {
       margin: 0;
       padding: 0;
+      line-height: 170%;
     }
   }
 }
