@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 const removeMenu = (ele: HTMLElement | Element) => {
   if (
     ele &&
@@ -21,21 +22,32 @@ export const clickBadge = (id: string, data: any) => () => {
       const div = document.createElement('div');
       const menuData = data.filter((item: any) => item.tech === name);
 
-      elements.forEach((item) => {
-        removeMenu(item);
-      });
+      elements.forEach(removeMenu);
 
       if (menuData.length < 1) return;
 
       div.setAttribute('class', 'actualMenu');
       div.innerHTML = !menuData
         ? ''
-        : `<p>${menuData[0].live}</p><p>${menuData[0].repo}</p>`;
+        : `<div class="interactive-menu">
+        ${
+          menuData[0].live &&
+          `<p class="interactive-menu__item">
+            <a class="link secondary interactive-menu__link" href="${menuData[0].live}" rel="noreferrer" target="_blank">${menuData[0].tech} - Live App</a>
+          </p>`
+        }
+          <p class="interactive-menu__item">
+            <a class="link secondary interactive-menu__link" href="${
+              menuData[0].repo
+            }" rel="noreferrer" target="_blank">${
+            menuData[0].tech
+          } - Repository</a>
+          </p>
+        </div>
+        `;
 
       removeMenu(this);
       this.appendChild(div);
-
-      // console.log(data.filter((item: any) => item.tech === name));
     },
   );
 };

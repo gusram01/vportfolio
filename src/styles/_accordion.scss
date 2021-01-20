@@ -20,6 +20,7 @@
   }
   .accordion__label.active {
     color: var(--color-danger);
+    cursor: pointer;
   }
   .accordion__label:after {
     content: '+';
