@@ -1,7 +1,7 @@
 :root {
   --hue-dark: 240;
-  --sat-dark: 7;
-  --lumin-dark: 12;
+  --sat-dark: 5;
+  --lumin-dark: 9;
   --alpha-dark: 100;
 
   --hue-primary-dark: 67;
@@ -20,8 +20,8 @@
   --alpha-danger-dark: 100;
 
   --hue-light: 240;
-  --sat-light: 2;
-  --lumin-light: 88;
+  --sat-light: 5;
+  --lumin-light: 91;
   --alpha-light: 100;
 
   --hue-primary-light: 223;
@@ -71,6 +71,12 @@
     calc((100 - var(--lumin-dark)) * 1%),
     calc(var(--alpha-dark) * 1%)
   );
+  --shadow: hsla(
+    var(--hue-dark),
+    calc(var(--sat-dark) * 1%),
+    calc((100 - var(--lumin-dark)) * 1%),
+    calc((var(--alpha-dark) - 70) * 1%)
+  );
   --color-primary: hsla(
     var(--hue-primary-dark),
     calc(var(--sat-primary-dark) * 1%),
@@ -115,6 +121,12 @@
     calc(var(--sat-light) * 1%),
     calc((var(--lumin-light) - 10) * 1%),
     calc(var(--alpha-light) * 1%)
+  );
+  --shadow: hsla(
+    var(--hue-light),
+    calc(var(--sat-light) * 1%),
+    calc((100 - var(--lumin-light)) * 1%),
+    calc((var(--alpha-light) - 70) * 1%)
   );
   --font: hsla(
     var(--hue-light),

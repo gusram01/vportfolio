@@ -3,6 +3,7 @@
 @use './styles/card';
 @use './styles/form';
 @use './styles/buttons';
+@use './styles/badge';
 @use './styles/header';
 @use './styles/tools';
 @use './styles/projects';
@@ -13,6 +14,7 @@
   font-family: 'Ubuntu';
   src: local('Ubuntu'),
     url(./assets/fonts/Ubuntu-Regular.ttf) format('truetype');
+  font-display: swap;
 }
 
 * {

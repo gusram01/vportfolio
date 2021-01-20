@@ -14,5 +14,7 @@ export const getString = ({
           ${abstract}
           </section>
           <p>${description}</p>
-          <code>${JSON.stringify(techs, null, 2)} </code>
+          <p> 
+          ${techs.map((tech) => `<span class="badge">${tech.tech} </span>`)} 
+          </p>
         </div>`;
