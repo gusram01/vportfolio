@@ -1,6 +1,6 @@
 import { toggleActive } from './toggleActive';
 
-export const getAccordionString = (content: string, id: string) => {
+export const getAccordion = (content: string, id: string) => {
   const str = `<section class="accordion" id="${id}">
   <div class="accordion__label">
   more details
@@ -9,5 +9,5 @@ export const getAccordionString = (content: string, id: string) => {
   </section>`;
   const cb = toggleActive(id);
 
-  return { str, cb };
+  return { str, cbAccordion: cb };
 };
