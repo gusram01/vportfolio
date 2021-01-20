@@ -88,12 +88,22 @@
             <div class="card__content">
               <form class="form" id="form-contact">
                 <div class="form__field">
-                  <input type="text" name="name" aria-label="name" />
+                  <input
+                    autocomplete="off"
+                    type="text"
+                    name="name"
+                    aria-label="name"
+                  />
                   <label for="name">Name</label>
                   <p></p>
                 </div>
                 <div class="form__field">
-                  <input type="email" name="email" aria-label="email" />
+                  <input
+                    autocomplete="off"
+                    type="email"
+                    name="email"
+                    aria-label="email"
+                  />
                   <label for="email">Email</label>
                   <p></p>
                 </div>
@@ -109,10 +119,12 @@
                   <p></p>
                 </div>
                 <input
-                  class="btn button-outline primary"
+                  autocomplete="off"
+                  class="btn button-outline button-block primary"
                   type="submit"
                   value="Send"
                 />
+                <p></p>
               </form>
             </div>
           </article>

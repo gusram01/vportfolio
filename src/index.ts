@@ -1,10 +1,10 @@
 import './styles.scss';
 import './assets/fonts/Ubuntu-Regular.ttf';
 import './assets/platzi.png';
-import { theme } from './services/theme';
-import { onSubmit, formInfo } from './ts/form';
 import { getLegend } from './ts/legend';
+import { theme } from './services/theme';
 import { getTools } from './components/tools';
+import { onSubmit, inputsLister } from './services/form';
 import { renderProjects } from './components/project';
 
 const darky = document.getElementById('dark-theme') as HTMLButtonElement;
@@ -14,6 +14,7 @@ const projects = document.getElementById(
 const tools = document.getElementById('tools') as HTMLDivElement;
 
 theme(darky);
+inputsLister();
 onSubmit();
 getTools(tools);
 getLegend();
