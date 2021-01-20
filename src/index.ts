@@ -4,11 +4,14 @@ import './assets/platzi.png';
 // import loading from './ts/loading';
 import { theme } from './services/theme';
 import { onSubmit, formInfo } from './ts/form';
-import { render } from './ts/renderData';
 import { getLegend } from './ts/legend';
 import { getTools } from './components/tools';
+import { renderProjects } from './components/project';
 
 const darky = document.getElementById('dark-theme') as HTMLButtonElement;
+const projects = document.getElementById(
+  'projects-container',
+) as HTMLDivElement;
 const tools = document.getElementById('tools') as HTMLDivElement;
 
 // const isLoading = false;
@@ -16,7 +19,9 @@ const tools = document.getElementById('tools') as HTMLDivElement;
 theme(darky);
 onSubmit();
 getTools(tools);
-render();
+renderProjects()
+  .then((fragment) => projects.appendChild(fragment!.cloneNode(true)))
+  .catch();
 getLegend();
 
 export { onSubmit, theme };
