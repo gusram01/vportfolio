@@ -1,0 +1,68 @@
+.myicon::before {
+  display: inline-block;
+  font-variant: normal;
+  text-rendering: auto;
+}
+.mybrand::before {
+  display: inline-block;
+  font-variant: normal;
+  text-rendering: auto;
+}
+
+.about-icon::before {
+  content: '\f007';
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Solid';
+}
+.experience-icon::before {
+  content: '\f508';
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Solid';
+}
+.education-icon::before {
+  content: '\f501';
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Solid';
+}
+.contact-icon::before {
+  content: '\f674';
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Solid';
+}
+.tools-icon::before {
+  content: '\f7d9';
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Solid';
+}
+.projects-icon::before {
+  content: '\f1c9';
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Solid';
+}
+.moon-icon::before {
+  content: '\f186';
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Solid';
+  color: #799be4;
+}
+.sun-icon::before {
+  content: '\f185';
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Solid';
+  color: #ffaa4f;
+}
+.twitter-icon::before {
+  content: '\f099';
+  font-weight: 400;
+  font-family: 'Font Awesome 5 Brands';
+}
+.linkedin-icon::before {
+  content: '\f08c';
+  font-weight: 400;
+  font-family: 'Font Awesome 5 Brands';
+}
+.github-icon::before {
+  content: '\f09b';
+  font-weight: 400;
+  font-family: 'Font Awesome 5 Brands';
+}

@@ -40,7 +40,8 @@
 
   .card__avatar {
     grid-area: avatar;
-
+    align-items: center;
+    justify-content: center;
     img {
       max-width: 100%;
     }

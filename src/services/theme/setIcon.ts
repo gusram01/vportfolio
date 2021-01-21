@@ -1,4 +1,6 @@
 export const setIcon = (ele: HTMLButtonElement, flag: boolean) =>
   // eslint-disable-next-line no-param-reassign
   (ele.innerHTML = `
-<i class="icon ${flag ? 'fas fa-moon' : 'fas fa-sun'}" ></i>`);
+<span class="icon ${
+    flag ? 'myicon moon-icon' : 'myicon sun-icon'
+  }" style="font-size: 25px;"></span>`);

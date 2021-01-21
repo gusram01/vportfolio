@@ -12,6 +12,7 @@ module.exports = {
   output: {
     filename: 'js/bundle.[contenthash].js',
     path: path.resolve(__dirname, '..', 'public'),
+    assetModuleFilename: '[hash][ext][query]',
     publicPath: '/',
   },
   optimization: {
@@ -53,6 +54,14 @@ module.exports = {
       },
 
       {
+        test: /\.css$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'css/[hash][ext][query]',
+        },
+      },
+
+      {
         test: /\.(png|jpg|gif)$/i,
         use: [
           {
@@ -67,6 +76,9 @@ module.exports = {
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'webfonts/[hash][ext][query]',
+        },
       },
 
       {

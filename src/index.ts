@@ -1,5 +1,4 @@
 import './styles.scss';
-import './assets/fonts/Ubuntu-Regular.ttf';
 import './assets/platzi.png';
 import { getLegend } from './ts/legend';
 import { theme } from './services/theme';
