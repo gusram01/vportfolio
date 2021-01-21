@@ -1,0 +1,28 @@
+.nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99000;
+  .nav__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    .nav__item {
+      list-style: none;
+      text-align: center;
+      .link.nav__link {
+        font-size: smaller;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}

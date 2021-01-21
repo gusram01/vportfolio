@@ -7,6 +7,7 @@
 @use './styles/badge';
 @use './styles/interactive-menu';
 @use './styles/header';
+@use './styles/nav';
 @use './styles/tools';
 @use './styles/projects';
 @use './styles/aboutcontact';
@@ -22,8 +23,13 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 html,
 body {
+  width: 100%;
+  height: 100%;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -52,4 +58,9 @@ svg {
 .icon {
   font-size: 1.4em;
   padding: 0.5em;
+}
+.resume {
+  max-width: 1024px;
+  min-height: 100vh;
+  margin: 0 auto;
 }
