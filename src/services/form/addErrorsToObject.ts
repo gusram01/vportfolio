@@ -14,7 +14,7 @@ export const addErrorsToObject = (
     if (ele.name === 'name') {
       formInfo.errors.push({
         name: ele.name,
-        error: 'field is requiered & min 2 characters',
+        error: 'Field is requiered & min 2 characters',
       });
     }
     if (ele.name === 'email') {
@@ -26,7 +26,7 @@ export const addErrorsToObject = (
     if (ele.name === 'msg') {
       formInfo.errors.push({
         name: ele.name,
-        error: 'Please writa a msg with at least 10 characters',
+        error: 'Please write a msg with at least 10 characters',
       });
     }
     ele.classList.add('error');

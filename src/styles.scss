@@ -64,6 +64,7 @@
 }
 html {
   scroll-behavior: smooth;
+  scroll-padding: 60px;
 }
 html,
 body {
@@ -77,6 +78,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: var(--bg);
   color: var(--font);
+}
+main {
+  padding: 1rem 0 0;
 }
 
 a,
@@ -98,7 +102,7 @@ svg {
   font-size: 1.4em;
 }
 .resume {
-  max-width: 1024px;
+  max-width: 768px;
   min-height: 100vh;
   margin: 0 auto;
 }

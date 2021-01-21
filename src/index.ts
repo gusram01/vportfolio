@@ -9,8 +9,10 @@ import {
   isDisabledButtonSend,
 } from './services/form';
 import { renderProjects } from './components/project';
+import { firstObs } from './services/nav/changeNavBg';
 
 const darky = document.getElementById('dark-theme') as HTMLButtonElement;
+const headerContent = document.getElementById('header-content') as HTMLElement;
 const projects = document.getElementById(
   'projects-container',
 ) as HTMLDivElement;
@@ -29,4 +31,6 @@ renderProjects()
     obj!.actionsListeners.forEach((item) => item());
   })
   .catch(console.error);
+
+firstObs.observe(headerContent);
 export { onSubmit, theme };
