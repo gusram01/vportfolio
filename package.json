@@ -59,6 +59,11 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "mongodb": "^3.6.3"
+    "@types/cors": "^2.8.9",
+    "@types/nodemailer": "^6.4.0",
+    "cors": "^2.8.5",
+    "mongodb": "^3.6.3",
+    "nodemailer": "^6.4.17",
+    "sweetalert2": "^10.13.0"
   }
 }

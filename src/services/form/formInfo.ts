@@ -5,4 +5,5 @@ export const formInfo: FormInfo = {
   valid: false,
   errors: [],
   controls: [],
+  value: {} as any,
 };

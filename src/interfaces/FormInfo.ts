@@ -4,4 +4,5 @@ export interface FormInfo {
   valid: boolean;
   errors: Array<any>;
   controls: Array<any>;
+  value: any;
 }

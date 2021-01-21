@@ -3,6 +3,9 @@ import {
   addControlToObject,
   addErrorsToObject,
   changeClassLabelActive,
+  isDisabledButtonSend,
+  renderError,
+  addValueObject,
 } from '.';
 import emailPattern from '../../helpers/emailPattern';
 
@@ -12,23 +15,25 @@ const email = form.elements.namedItem('email') as HTMLInputElement;
 const msg = form.elements.namedItem('msg') as HTMLInputElement;
 
 name.required = true;
+name.minLength = 2;
 email.required = true;
 email.pattern = emailPattern;
 msg.required = true;
+msg.minLength = 10;
 
 // eslint-disable-next-line no-unused-vars
 function nativeValidity(this: HTMLInputElement | HTMLTextAreaElement) {
   formInfo.pristine = false;
   addControlToObject(formInfo, this.name, this.value);
   addErrorsToObject(formInfo, this);
+  addValueObject(formInfo, this.name, this.value);
   formInfo.valid = form.checkValidity();
   changeClassLabelActive(this);
-  // this.value.length < 1
-  //   ? this.nextElementSibling.classList.remove('label-active')
-  //   : this.nextElementSibling.classList.add('label-active');
+  isDisabledButtonSend(!form.checkValidity());
+  renderError(this, formInfo);
 }
 
-export const inputsLister = () => {
+export const inputsListener = () => {
   name.addEventListener('input', nativeValidity);
   email.addEventListener('input', nativeValidity);
   msg.addEventListener('input', nativeValidity);

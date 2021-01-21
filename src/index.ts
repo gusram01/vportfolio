@@ -4,7 +4,11 @@ import './assets/platzi.png';
 import { getLegend } from './ts/legend';
 import { theme } from './services/theme';
 import { getTools } from './components/tools';
-import { onSubmit, inputsLister } from './services/form';
+import {
+  onSubmit,
+  inputsListener,
+  isDisabledButtonSend,
+} from './services/form';
 import { renderProjects } from './components/project';
 
 const darky = document.getElementById('dark-theme') as HTMLButtonElement;
@@ -14,7 +18,8 @@ const projects = document.getElementById(
 const tools = document.getElementById('tools') as HTMLDivElement;
 
 theme(darky);
-inputsLister();
+inputsListener();
+isDisabledButtonSend();
 onSubmit();
 getTools(tools);
 getLegend();
