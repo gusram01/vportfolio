@@ -1,6 +1,5 @@
 import './styles.scss';
 import './assets/platzi.png';
-import './assets/gusicon.png';
 import { getLegend } from './ts/legend';
 import { theme } from './services/theme';
 import { getTools } from './components/tools';
