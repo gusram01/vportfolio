@@ -59,14 +59,19 @@
   font-style: normal;
 }
 
-* {
-  box-sizing: border-box;
-}
 html {
+  box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding: 60px;
+  scroll-padding: 60px 0 0 0;
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
 }
-html,
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -82,7 +87,10 @@ body {
 main {
   padding: 1rem 0 0;
 }
-
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+}
 a,
 a:visited {
   text-decoration: none;
@@ -110,4 +118,5 @@ svg {
   min-height: 100vh;
   margin: 0 auto;
   background: var(--bg);
+  overflow: hidden;
 }
