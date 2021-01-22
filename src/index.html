@@ -6,44 +6,54 @@
 
     <title>@gusram01</title>
   </head>
-  <body class="dark-theme" id="body">
+  <body id="body">
     <div class="resume" id="home">
       <!--    Header    -->
       <header class="header wo-bg" id="header">
+        <!--    Navbar    -->
+        <nav class="nav" id="nav">
+          <ul class="nav__container small-screen">
+            <button type="button" class="btn" id="dark-theme"></button>
+            <span class="separator" id="nav-separator"></span>
+            <li class="nav__item">
+              <a href="#home" class="nav__link link primary">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link link primary">Contact</a>
+            </li>
+            <div class="small-nav">
+              <li class="nav__item">
+                <a href="#about" class="nav__link link primary">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="#skills" class="nav__link link primary">Tools</a>
+              </li>
+              <li class="nav__item">
+                <a href="#education" class="nav__link link primary"
+                  >Education</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="#experience" class="nav__link link primary"
+                  >Experience</a
+                >
+              </li>
+            </div>
+            <div class="ham" id="ham">
+              <div class="ham__line ham__top"></div>
+              <div class="ham__line ham__mid"></div>
+              <div class="ham__line ham__bot"></div>
+            </div>
+          </ul>
+        </nav>
+
+        <!--    Title    -->
         <div class="header__content" id="header-content">
           <div class="title">
             <h1>Gus Ramírez</h1>
             <h2>Front-end / Backend - dev</h2>
           </div>
-          <span class="separator" id="nav-separator"></span>
-          <button type="button" class="btn" id="dark-theme"></button>
         </div>
-
-        <!--    Navbar    -->
-        <nav class="nav">
-          <ul class="nav__container small-screen">
-            <li class="nav__item">
-              <a href="#home" class="nav__link link primary">Projects</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link link primary">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link link primary">Contact</a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link link primary">Tools</a>
-            </li>
-            <li class="nav__item">
-              <a href="#education" class="nav__link link primary">Education</a>
-            </li>
-            <li class="nav__item">
-              <a href="#experience" class="nav__link link primary"
-                >Experience</a
-              >
-            </li>
-          </ul>
-        </nav>
       </header>
 
       <!--    Main    -->
@@ -143,13 +153,14 @@
                     <label htmlFor="msg">Message</label>
                     <p></p>
                   </div>
-                  <input
-                    class="btn button-outline button-block primary"
-                    type="submit"
-                    value="Send"
-                    id="send"
-                  />
-                  <p></p>
+                  <div class="form__button-send">
+                    <input
+                      class="btn button-outline button-block primary"
+                      type="submit"
+                      value="Send"
+                      id="send"
+                    />
+                  </div>
                 </form>
               </div>
             </article>
