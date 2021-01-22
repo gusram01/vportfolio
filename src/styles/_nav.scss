@@ -6,7 +6,16 @@
   min-height: 50px;
   padding: 1em 0;
   margin: 0 auto;
+  background: var(--bg);
   z-index: 99000;
+}
+.nav::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(transparent, var(--bg2));
 }
 .nav__container {
   display: flex;

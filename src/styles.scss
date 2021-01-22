@@ -50,6 +50,7 @@
   src: url('./assets/fonts/fa-solid-900.eot?#iefix') format('embedded-opentype'),
     url('./assets/fonts/fa-solid-900.woff') format('woff');
   font-style: bold;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Font Awesome 5 Brands';
@@ -57,6 +58,7 @@
       format('embedded-opentype'),
     url('./assets/fonts/fa-brands-400.woff') format('woff');
   font-style: normal;
+  font-display: swap;
 }
 
 html {
@@ -112,7 +114,9 @@ svg {
 .resume {
   max-width: 768px;
   min-height: 100vh;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
   background: var(--bg);
+  border-radius: 0 0 10px 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   overflow: hidden;
 }
