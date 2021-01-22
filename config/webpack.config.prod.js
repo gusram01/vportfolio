@@ -22,6 +22,16 @@ module.exports = {
     minimize: true,
     emitOnErrors: true,
     removeAvailableModules: false,
+    moduleIds: 'deterministic',
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        },
+      },
+    },
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -73,6 +83,7 @@ module.exports = {
             },
           },
         ],
+        type: 'asset/resource',
       },
 
       {

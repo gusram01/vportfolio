@@ -5,15 +5,34 @@
   justify-content: center;
   width: 100%;
   min-height: 150px;
+  padding-top: 3rem;
 }
 .footer__links {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 3em auto;
+
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -1em;
+    width: 35%;
+    height: 2px;
+    background: var(--color-secondary);
+  }
+  &::after {
+    right: 0;
+  }
+  &::before {
+    left: 0;
+  }
 }
+
 .footer__link {
   margin: 0.5rem;
 }
