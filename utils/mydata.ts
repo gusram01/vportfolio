@@ -22,7 +22,8 @@ const data = [
         repo: 'https://github.com/gusram01/videos-vue',
       },
     ],
-    image: '',
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/gus-portfolio.appspot.com/o/images%2Fangular3.jpg?alt=media&token=8aca8cdd-1838-430f-addc-648955b4d2e2',
   },
   {
     title: 'MyClients',
@@ -42,7 +43,8 @@ const data = [
         repo: 'https://github.com/gusram01/front-clients',
       },
     ],
-    image: '',
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/gus-portfolio.appspot.com/o/images%2Fheroku.jpg?alt=media&token=6e65009f-1856-4cc3-a184-60155065e160',
   },
   {
     title: 'Games',
@@ -56,7 +58,8 @@ const data = [
         repo: 'https://github.com/gusram01/games',
       },
     ],
-    image: '',
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/gus-portfolio.appspot.com/o/images%2Fgames.jpg?alt=media&token=e140b8cf-a5e0-4be9-a2c1-b7017311cbf9',
   },
 ];
 export default data;

@@ -6,4 +6,5 @@ export interface MyProjectData {
   abstract: string;
   description: string;
   techs: MyTechData[];
+  image: string;
 }

@@ -12,13 +12,13 @@
   text-align: center;
   overflow: hidden;
   transform-style: preserve-3d;
-  perspective: 6000px;
+  perspective: 2200px;
 
   .tools-inside {
     position: relative;
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
+    width: 130px;
+    height: 130px;
+    margin: auto;
     padding: 1.5em 0;
     transform-style: preserve-3d;
   }
@@ -42,10 +42,10 @@
   .tool:hover::before {
     content: attr(data-title);
     position: absolute;
-    bottom: 0;
+    bottom: -2em;
     left: 50%;
-    width: 35%;
-    height: 10%;
+    width: 75%;
+    height: auto;
     background: var(--color-primary);
     color: transparent;
     font-size: 0.75em;

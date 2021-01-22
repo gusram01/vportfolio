@@ -8,6 +8,7 @@ export const getProject = ({
   abstract,
   description,
   techs,
+  image,
 }: MyProjectData) => {
   const { str, cbAccordion } = getAccordion(description, title.toLowerCase());
   const idBadge = (id: string) =>
@@ -16,6 +17,11 @@ export const getProject = ({
   <div class="card__header">
   <h4 class="card__title">${title}</h4>
   </div>
+  <div class="card__image">${
+    !image
+      ? ''
+      : `<img src="${image}" alt="${abstract}" width="600" loading="lazy">`
+  }</div>
   <div class="card__content ">
   <p>${abstract}</p>
   ${str}
