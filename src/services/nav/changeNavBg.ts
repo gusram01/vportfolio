@@ -1,5 +1,4 @@
 const header = document.getElementById('header') as HTMLElement;
-
 const firstObsOptions = {
   rootMargin: '-20px 0px 0px 0px',
 };

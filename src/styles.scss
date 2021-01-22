@@ -95,7 +95,11 @@ svg {
   color: var(--font);
 }
 .separator {
+  display: inline;
   flex: 1 1 auto;
+}
+.separator.hide {
+  display: none;
 }
 
 .icon {
