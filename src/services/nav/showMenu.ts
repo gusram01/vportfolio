@@ -1,13 +1,34 @@
-export const showSmallMenu = (element: HTMLElement) =>
-  element.addEventListener('click', (e) => {
-    const smallNav = document.querySelector('.small-nav');
-    const ele = e.target as HTMLElement;
-    const ham1 = ele!.firstElementChild;
-    const ham2 = ele!.firstElementChild!.nextElementSibling;
-    const ham3 = ele!.lastElementChild;
+const nav = document.getElementById('nav') as HTMLElement;
+const smallNav = document.querySelector('.small-nav') as HTMLDivElement;
+// eslint-disable-next-line no-undef
+const lines = document.querySelectorAll('.ham__line') as NodeListOf<Element>;
 
-    smallNav?.classList.toggle('show');
-    ham1!.classList.toggle('show');
-    ham2!.classList.toggle('show');
-    ham3!.classList.toggle('show');
+export const showSmallMenu = () => {
+  const wichMediaQuery = matchMedia('(min-width: 720px)');
+
+  window.addEventListener('resize', () => {
+    if (wichMediaQuery) {
+      smallNav.classList.remove('show');
+      lines.forEach((item) => item.classList.remove('show'));
+    }
   });
+
+  nav.addEventListener('click', (e: MouseEvent) => {
+    const elem = e.target as HTMLElement;
+
+    if (elem && elem.id === 'ham') {
+      lines.forEach((item) => item.classList.toggle('show'));
+      smallNav?.classList.toggle('show');
+      if (smallNav?.className.includes('show')) {
+        smallNav.addEventListener(
+          'click',
+          () => {
+            smallNav.classList.remove('show');
+            lines.forEach((item) => item.classList.remove('show'));
+          },
+          { once: true },
+        );
+      }
+    }
+  });
+};
