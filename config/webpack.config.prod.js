@@ -39,6 +39,7 @@ module.exports = {
       template: 'src/index.html',
       filename: './index.html',
       favicon: 'src/assets/favicon.ico',
+      scriptLoading: 'defer',
     }),
 
     new MiniCssExtractPlugin({

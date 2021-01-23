@@ -17,7 +17,7 @@
 @font-face {
   font-family: 'cadmanregular';
   src: local('cadmanregular'),
-    url(./assets/fonts/Cadman_Roman-webfont.woff) format('woff');
+    url('./assets/fonts/Cadman_Roman-webfont.woff') format('woff');
   font-display: swap;
   font-weight: normal;
   font-style: normal;
@@ -25,7 +25,7 @@
 @font-face {
   font-family: 'cadmanregular';
   src: local('cadmanregular'),
-    url(./assets/fonts/Cadman_Italic-webfont.woff) format('woff');
+    url('./assets/fonts/Cadman_Italic-webfont.woff') format('woff');
   font-display: swap;
   font-weight: normal;
   font-style: italic;
@@ -33,7 +33,7 @@
 @font-face {
   font-family: 'cadmanregular';
   src: local('cadmanregular'),
-    url(./assets/fonts/Cadman_Bold-webfont.woff) format('woff');
+    url('./assets/fonts/Cadman_Bold-webfont.woff') format('woff');
   font-display: swap;
   font-weight: bold;
   font-style: normal;
