@@ -48,11 +48,12 @@
   border-radius: 4px;
   box-shadow: 1px 1px 1px var(--font);
   justify-content: space-evenly;
-  top: 10%;
-  right: 10%;
+  top: 4.5rem;
+  right: 2rem;
   width: 200px;
   height: 300px;
   background: var(--bg3);
+  z-index: 150000;
 
   -webkit-animation: 250ms cubic-bezier(0.44, 0.23, 0.53, 1.29) forwards
     animateSmallMenu;
@@ -187,5 +188,14 @@
   }
   .small-nav {
     display: flex;
+  }
+}
+@media (max-height: 450px) and (orientation: landscape) {
+  .small-nav.show {
+    max-height: 150px;
+    font-size: 0.8em;
+    .nav__item {
+      margin: 4px 0;
+    }
   }
 }
