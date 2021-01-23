@@ -7,7 +7,7 @@ module.exports = {
   mode: 'production',
   entry: './src/index.ts',
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: ['.ts', '.js'],
   },
   output: {
     filename: 'js/bundle.[contenthash].js',

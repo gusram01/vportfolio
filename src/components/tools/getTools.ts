@@ -41,7 +41,7 @@ const tools = [
 
 export const getTools = (container: HTMLDivElement) => {
   const fragment = document.createDocumentFragment();
-  pauseAnimation(container);
+  // pauseAnimation(container);
 
   tools.forEach((tool) => {
     const div = document.createElement('div');

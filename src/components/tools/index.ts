@@ -1,4 +1,7 @@
 import { getTools } from './getTools';
-import { pauseAnimation } from './pauseAnimation';
+// import { pauseAnimation } from './pauseAnimation';
 
-export { getTools, pauseAnimation };
+export {
+  getTools,
+  // pauseAnimation
+};
