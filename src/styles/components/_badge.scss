@@ -16,8 +16,8 @@
   user-select: none;
   cursor: pointer;
   opacity: 0.8;
-}
-.badge:hover {
-  opacity: 1;
-  transition: opacity 200ms ease-in;
+  &:hover {
+    opacity: 1;
+    transition: opacity 200ms ease-in;
+  }
 }

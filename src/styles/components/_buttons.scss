@@ -1,3 +1,26 @@
+.btn {
+  font-size: 0.9em;
+  font-weight: 600;
+  line-height: 1.3em;
+  &:hover {
+    opacity: 1;
+    transition: opacity 250ms ease;
+  }
+  &:focus {
+    outline: 1px solid currentColor;
+  }
+}
+.link {
+  font-weight: 600;
+  &:visited {
+    color: currentColor;
+  }
+  &:hover,
+  &:focus {
+    opacity: 1;
+    text-decoration: underline;
+  }
+}
 .btn,
 .link {
   min-width: 2em;
@@ -11,30 +34,18 @@
   color: currentColor;
   text-align: center;
   cursor: pointer;
+  &.primary {
+    color: var(--color-primary);
+  }
+
+  &.secondary {
+    color: var(--color-secondary);
+  }
+  &.danger {
+    color: var(--color-danger);
+  }
 }
-.btn {
-  font-size: 0.9em;
-  font-weight: 600;
-  line-height: 1.3em;
-}
-.link {
-  font-weight: 600;
-}
-.link:visited {
-  color: currentColor;
-}
-.link:hover,
-.link:focus {
-  opacity: 1;
-  text-decoration: underline;
-}
-.btn:hover {
-  opacity: 1;
-  transition: opacity 250ms ease;
-}
-.btn:focus {
-  outline: 1px solid currentColor;
-}
+
 .button-block {
   width: 100%;
 }
@@ -57,18 +68,4 @@
 .button-disabled {
   opacity: 0.4;
   pointer-events: none;
-}
-
-.btn.primary,
-.link.primary {
-  color: var(--color-primary);
-}
-
-.btn.secondary,
-.link.secondary {
-  color: var(--color-secondary);
-}
-.btn.danger,
-.link.danger {
-  color: var(--color-danger);
 }

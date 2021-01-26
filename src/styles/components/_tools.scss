@@ -1,0 +1,31 @@
+.glider-contain {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+  .tool {
+    position: relative;
+    height: 200px;
+    svg {
+      width: 90px;
+      height: 90px;
+    }
+    &:hover::before {
+      content: attr(data-title);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      background: var(--color-primary);
+      color: transparent;
+      font-size: 0.75em;
+      font-weight: 700;
+      text-transform: capitalize;
+      padding: 0.5em;
+      margin: 0 auto;
+      text-shadow: 0 0 0 var(--bg);
+      border-radius: 6px;
+      z-index: 76000;
+    }
+  }
+}

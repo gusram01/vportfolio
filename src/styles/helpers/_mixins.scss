@@ -1,0 +1,35 @@
+@mixin theme($bg-color: $bg-color-dark, $font-color: $font-color-dark) {
+  --bg: #{$bg-color};
+  --font: #{$font-color};
+}
+@mixin theme-grays(
+  $bg1-color: $bg1-color-dark,
+  $bg2-color: $bg2-color-dark,
+  $bg3-color: $bg3-color-dark,
+  $bg4-color: $bg4-color-dark
+) {
+  --bg1: #{$bg1-color};
+  --bg2: #{$bg2-color};
+  --bg3: #{$bg3-color};
+  --bg4: #{$bg4-color};
+}
+@mixin theme-colors(
+  $primary-color: $primary-color-dark,
+  $secondary-color: $secondary-color-dark,
+  $danger-color: $danger-color-dark
+) {
+  --color-primary: #{$primary-color};
+  --color-secondary: #{$secondary-color};
+  --color-danger: #{$danger-color};
+}
+@mixin theme-shadows(
+  $shadow1: $shadow1-dark,
+  $shadow2: $shadow2-dark,
+  $shadow3: $shadow3-dark,
+  $shadow4: $shadow4-dark
+) {
+  --shadow1: #{$shadow1};
+  --shadow2: #{$shadow2};
+  --shadow3: #{$shadow3};
+  --shadow4: #{$shadow4};
+}

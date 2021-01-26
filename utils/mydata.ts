@@ -13,12 +13,12 @@ const data = [
       },
       {
         tech: 'angular',
-        live: 'http://videos-ng.gusramirez.vercel.app/',
+        live: 'http://videos-ng.vercel.app/',
         repo: 'https://github.com/gusram01/videos-ng',
       },
       {
         tech: 'vue',
-        live: 'http://videos-vue.gusramirez.vercel.app/',
+        live: 'http://videos-vue.vercel.app/',
         repo: 'https://github.com/gusram01/videos-vue',
       },
     ],

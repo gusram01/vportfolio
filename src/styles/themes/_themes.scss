@@ -1,0 +1,29 @@
+@import '../helpers/globals-helpers';
+
+.dark-theme {
+  @include theme;
+  @include theme-grays;
+  @include theme-colors;
+  @include theme-shadows;
+}
+
+.light-theme {
+  @include theme($bg-color-light, $font-color-light);
+  @include theme-grays(
+    $bg1-color-light,
+    $bg2-color-light,
+    $bg3-color-light,
+    $bg4-color-light
+  );
+  @include theme-colors(
+    $primary-color-light,
+    $secondary-color-light,
+    $danger-color-light
+  );
+  @include theme-shadows(
+    $shadow1-light,
+    $shadow2-light,
+    $shadow3-light,
+    $shadow4-light
+  );
+}

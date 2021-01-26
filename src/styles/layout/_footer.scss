@@ -14,7 +14,12 @@
   flex-wrap: wrap;
   list-style: none;
   margin: 3em auto;
-
+  &::after {
+    right: 0;
+  }
+  &::before {
+    left: 0;
+  }
   &::after,
   &::before {
     content: '';
@@ -24,12 +29,6 @@
     width: 35%;
     height: 2px;
     background: var(--color-secondary);
-  }
-  &::after {
-    right: 0;
-  }
-  &::before {
-    left: 0;
   }
 }
 
