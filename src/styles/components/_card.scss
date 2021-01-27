@@ -8,6 +8,7 @@
   padding: 1em;
   color: currentColor;
   border-radius: 6px;
+  font-feature-settings: 'zero';
 
   &__header {
     display: grid;
@@ -55,8 +56,8 @@
     display: flex;
     width: 100%;
     margin: 0 auto;
-    text-align: justify;
     color: currentColor;
+
     p {
       margin: 0;
       padding: 0;
@@ -84,6 +85,8 @@
     max-width: 65ch;
     height: auto;
     padding: 1em 0;
+    text-align: justify;
+    font-feature-settings: 'kern';
   }
 
   &__actions {

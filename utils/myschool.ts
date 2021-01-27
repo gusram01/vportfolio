@@ -3,7 +3,8 @@ export const schools = [
     school: 'Platzi',
     link: 'https://platzi.com/p/gusram01/',
     title: 'Front-end / Backend dev',
-    abstract: 'Within Platzi I want to become a software dev',
+    abstract:
+      'I&apos;m still studying at Platzi because I want to become a software dev',
   },
   {
     school: 'Udemy',
