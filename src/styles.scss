@@ -1,7 +1,46 @@
-@use './styles/helpers/globals-helpers';
-@use './styles/base/globals-base';
-@use './styles/themes/themes';
-@use './styles/vendors/fawesome';
+@font-face {
+  font-family: 'cadmanregular';
+  src: local('cadmanregular'),
+    url('./assets/fonts/Cadman_Roman-webfont.woff') format('woff');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'cadmanregular';
+  src: local('cadmanregular'),
+    url('./assets/fonts/Cadman_Italic-webfont.woff') format('woff');
+  font-display: swap;
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'cadmanregular';
+  src: local('cadmanregular'),
+    url('./assets/fonts/Cadman_Bold-webfont.woff') format('woff');
+  font-display: swap;
+  font-weight: bold;
+  font-style: normal;
+}
 
-@use './styles/components/globals-components';
-@use './styles/layout/globals-layout';
+@font-face {
+  font-family: 'Font Awesome 5 Solid';
+  src: url('./assets/fonts/fa-solid-900.eot') format('embedded-opentype'),
+    url('./assets/fonts/fa-solid-900.woff') format('woff');
+  font-style: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  src: url('./assets/fonts/fa-brands-400.eot') format('embedded-opentype'),
+    url('./assets/fonts/fa-brands-400.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+
+@import './styles/helpers/globals-helpers';
+@import './styles/base/globals-base';
+@import './styles/themes/themes';
+@import './styles/vendors/fawesome';
+@import './styles/components/globals-components';
+@import './styles/layout/globals-layout';

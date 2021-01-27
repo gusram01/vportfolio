@@ -15,6 +15,10 @@ module.exports = {
     assetModuleFilename: '[hash][ext][query]',
     publicPath: '/',
   },
+  // performance: {
+  //   maxEntrypointSize: 512000,
+  //   maxAssetSize: 512000,
+  // },
   optimization: {
     nodeEnv: 'production',
     concatenateModules: true,
@@ -49,7 +53,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /.tsx?$/,
+        test: /.ts?$/,
         use: [
           {
             loader: 'ts-loader',
@@ -88,10 +92,19 @@ module.exports = {
 
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource',
-        generator: {
-          filename: 'webfonts/[hash][ext][query]',
-        },
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[hash].[ext]',
+              outputPath: 'webfonts/',
+            },
+          },
+        ],
+
+        // generator: {
+        //   filename: 'webfonts/[hash][ext][query]',
+        // },
       },
 
       {
