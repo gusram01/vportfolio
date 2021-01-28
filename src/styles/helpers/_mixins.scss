@@ -6,12 +6,14 @@
   $bg1-color: $bg1-color-dark,
   $bg2-color: $bg2-color-dark,
   $bg3-color: $bg3-color-dark,
-  $bg4-color: $bg4-color-dark
+  $bg4-color: $bg4-color-dark,
+  $bg5-color: $bg5-color-dark
 ) {
   --bg1: #{$bg1-color};
   --bg2: #{$bg2-color};
   --bg3: #{$bg3-color};
   --bg4: #{$bg4-color};
+  --bg5: #{$bg5-color};
 }
 @mixin theme-colors(
   $primary-color: $primary-color-dark,

@@ -1,0 +1,29 @@
+@import '../helpers/globals-helpers';
+
+.experience {
+  --shape1: #{$shape-curve};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 350px;
+  background: var(--bg5);
+
+  -webkit-clip-path: polygon(
+    0 calc(1vw * var(--shape1)),
+    50% 0,
+    100% calc(1vw * var(--shape1)),
+    100% 100%,
+    0 100%
+  );
+
+  clip-path: polygon(
+    0 calc(1vw * var(--shape1)),
+    50% 0,
+    100% calc(1vw * var(--shape1)),
+    100% 100%,
+    0 100%
+  );
+  margin-top: calc(-1vw * var(--shape1));
+  // margin-bottom: calc(-1vw * var(--shape1));
+}
