@@ -2,10 +2,9 @@ import './styles.scss';
 import './assets/platzi.png';
 import Glider from 'glider-js';
 import { getLegend } from './ts/legend';
-import { theme } from './services/theme';
 import { getTools } from './components/tools';
 import { renderProjects } from './components/project';
-import { insertContent } from './components/coding/content';
+import { theme } from './services/theme';
 import { firstObs } from './services/nav/changeNavBg';
 import { showSmallMenu } from './services/nav/showMenu';
 import {
@@ -21,7 +20,6 @@ const projectsContainer = document.getElementById(
 ) as HTMLDivElement;
 const tools = document.getElementById('tools') as HTMLDivElement;
 
-insertContent();
 renderProjects()
   .then((obj) => {
     projectsContainer.appendChild(obj!.fragment.cloneNode(true));

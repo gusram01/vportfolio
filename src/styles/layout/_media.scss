@@ -1,35 +1,19 @@
 @media (min-width: 800px) {
-  .background {
-    display: initial;
-  }
-
   .resume {
     margin: 5rem auto;
     border-radius: $radius-default;
   }
   .projects {
     .card {
+      &__content {
+        max-width: 96%;
+      }
       &__actions {
         min-height: 160px;
         padding-top: 0;
         padding-bottom: 0;
       }
     }
-  }
-  .accordion .accordion__content {
-    transform-origin: bottom;
-  }
-
-  .accordion__content.active {
-    position: absolute;
-    bottom: 107%;
-    left: 0;
-    width: 100%;
-    box-shadow: inset 0 0 14px var(--shadow2), 1px 1px 4px var(--shadow4),
-      -1px -1px 4px var(--shadow1);
-    border-radius: $radius-default;
-    overflow-x: hidden;
-    overflow-y: auto;
   }
 }
 
