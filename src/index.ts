@@ -38,7 +38,7 @@ getTools(tools);
 // eslint-disable-next-line no-new
 new Glider(tools, {
   slidesToShow: 1,
-  slidesToScroll: 1,
+  slidesToScroll: 'auto',
   draggable: true,
   dots: '.dots',
   arrows: {
@@ -52,7 +52,7 @@ new Glider(tools, {
       breakpoint: 360,
       settings: {
         slidesToShow: 'auto',
-        slidesToScroll: 'auto',
+        slidesToScroll: 1,
         itemWidth: 150,
       },
     },
