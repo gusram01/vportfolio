@@ -1,4 +1,5 @@
 .accordion {
+  position: relative;
   width: 100%;
   padding: 0;
   .accordion__label {
@@ -6,7 +7,7 @@
     display: flex;
     align-items: center;
     width: 90%;
-    margin: 4px auto;
+    margin: 1em auto;
     padding: 1em 2em;
     font-size: small;
     font-style: oblique;
@@ -35,15 +36,16 @@
     content: '-';
   }
   .accordion__content {
-    height: 0;
+    max-height: 0;
     transform-origin: top;
     transform: scaleY(0);
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     border-radius: 5px;
     background: var(--bg1);
   }
   .accordion__content.active {
-    height: auto;
+    min-height: 300px;
     padding: 1em;
     transform: scaleY(1);
     transition: transform 100ms ease-in;

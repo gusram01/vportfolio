@@ -3,7 +3,7 @@ const removeMenu = (ele: HTMLElement | Element) => {
   if (
     ele &&
     ele.lastElementChild &&
-    ele.lastElementChild.className.includes('actualMenu')
+    ele.lastElementChild.className.includes('interactive-menu')
   ) {
     ele.lastElementChild.remove();
   }
@@ -26,25 +26,22 @@ export const clickBadge = (id: string, data: any) => () => {
 
       if (menuData.length < 1) return;
 
-      div.setAttribute('class', 'actualMenu');
+      div.setAttribute('class', 'interactive-menu');
       div.innerHTML = !menuData
         ? ''
-        : `<div class="interactive-menu">
-        ${
-          menuData[0].live &&
-          `<p class="interactive-menu__item">
+        : `${
+            menuData[0].live &&
+            `<p class="interactive-menu__item">
             <a class="link secondary interactive-menu__link" href="${menuData[0].live}" rel="noreferrer" target="_blank">${menuData[0].tech} - Live App</a>
           </p>`
-        }
+          }
           <p class="interactive-menu__item">
             <a class="link secondary interactive-menu__link" href="${
               menuData[0].repo
             }" rel="noreferrer" target="_blank">${
             menuData[0].tech
           } - Repository</a>
-          </p>
-        </div>
-        `;
+          </p>`;
 
       removeMenu(this);
       this.appendChild(div);
