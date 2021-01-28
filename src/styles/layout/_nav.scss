@@ -8,7 +8,7 @@
   min-height: 50px;
   padding: 1em 0;
   margin: 0 auto;
-  border-radius: 10px 10px 0 0;
+  border-radius: $radius-default $radius-default 0 0;
   background: var(--bg);
   z-index: 99000;
 }

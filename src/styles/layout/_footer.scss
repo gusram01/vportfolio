@@ -1,5 +1,3 @@
-@import '../helpers/globals-helpers';
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -7,6 +5,7 @@
   justify-content: center;
   width: 100%;
   min-height: 350px;
+  border-radius: 0 0 $radius-default $radius-default;
   background: linear-gradient(var(--bg5) 0, var(--bg) 15%);
 }
 .footer__links {

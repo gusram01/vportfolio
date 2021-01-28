@@ -6,7 +6,7 @@ const firstObsOptions = {
 function cbObserver(entries: IntersectionObserverEntry[]) {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
-      console.log(entry);
+      // console.log(entry);
       nav.classList.add('with-bg');
     } else {
       nav.classList.remove('with-bg');
