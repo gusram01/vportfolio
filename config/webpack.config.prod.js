@@ -101,10 +101,6 @@ module.exports = {
             },
           },
         ],
-
-        // generator: {
-        //   filename: 'webfonts/[hash][ext][query]',
-        // },
       },
 
       {
