@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = {
   mode: 'production',
@@ -45,7 +46,7 @@ module.exports = {
       favicon: 'src/assets/favicon.ico',
       inject: false,
     }),
-
+    new CompressionPlugin(),
     new MiniCssExtractPlugin({
       filename: 'css/styles.[contenthash].css',
     }),
