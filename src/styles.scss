@@ -2,7 +2,7 @@
   font-family: 'cadmanregular';
   src: local('cadmanregular'),
     url('./assets/fonts/Cadman_Roman-webfont.woff') format('woff');
-  font-display: swap;
+  font-display: optional;
   font-weight: normal;
   font-style: normal;
 }
@@ -10,7 +10,7 @@
   font-family: 'cadmanregular';
   src: local('cadmanregular'),
     url('./assets/fonts/Cadman_Italic-webfont.woff') format('woff');
-  font-display: swap;
+  font-display: optional;
   font-weight: normal;
   font-style: italic;
 }
@@ -18,22 +18,20 @@
   font-family: 'cadmanregular';
   src: local('cadmanregular'),
     url('./assets/fonts/Cadman_Bold-webfont.woff') format('woff');
-  font-display: swap;
+  font-display: optional;
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Font Awesome 5 Solid';
-  src: url('./assets/fonts/fa-solid-900.eot') format('embedded-opentype'),
-    url('./assets/fonts/fa-solid-900.woff') format('woff');
+  src: url('./assets/fonts/fa-solid-900.woff') format('woff');
   font-style: bold;
   font-display: swap;
 }
 @font-face {
   font-family: 'Font Awesome 5 Brands';
-  src: url('./assets/fonts/fa-brands-400.eot') format('embedded-opentype'),
-    url('./assets/fonts/fa-brands-400.woff') format('woff');
+  src: url('./assets/fonts/fa-brands-400.woff') format('woff');
   font-style: normal;
   font-display: swap;
 }
