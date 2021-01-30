@@ -25,11 +25,12 @@
   );
   margin-top: calc(-1vw * var(--shape1));
   margin-bottom: calc(-1vw * var(--shape1));
+  .card__content {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 }
-.card__content {
-  padding-left: 2em;
-  padding-right: 2em;
-}
+
 .glider-contain {
   width: 90%;
   margin: 0 auto;
