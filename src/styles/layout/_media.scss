@@ -3,9 +3,11 @@
     margin: 5rem auto;
     border-radius: $radius-default;
   }
-  .projects {
-    min-height: 900px;
+}
 
+@media (min-width: 720px) {
+  .projects {
+    min-height: 1000px;
     .card {
       &__content {
         max-width: 96%;
@@ -17,9 +19,6 @@
       }
     }
   }
-}
-
-@media (min-width: 720px) {
   .ham {
     display: none;
     pointer-events: none;

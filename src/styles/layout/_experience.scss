@@ -23,5 +23,9 @@
     0 100%
   );
   margin-top: calc(-1vw * var(--shape1));
-  // margin-bottom: calc(-1vw * var(--shape1));
+
+  .card__content {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }

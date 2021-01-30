@@ -1,5 +1,5 @@
 import './styles.scss';
-import './assets/platzi.png';
+import './assets/glider.min.css';
 import Glider from 'glider-js';
 import { getLegend } from './ts/legend';
 import { getTools } from './components/tools';

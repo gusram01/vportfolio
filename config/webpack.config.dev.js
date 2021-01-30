@@ -30,14 +30,20 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: 'src/index.html',
+      template: 'src/index.pug',
       filename: './index.html',
       favicon: 'src/assets/favicon.ico',
+      inject: false,
     }),
   ],
 
   module: {
     rules: [
+      {
+        test: /\.pug$/,
+        use: 'pug-loader',
+      },
+
       {
         test: /.tsx?$/,
         use: [
@@ -52,37 +58,34 @@ module.exports = {
       },
 
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.(c|sa|sc)ss$/i,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
 
       {
-        test: /\.css$/i,
-        type: 'asset/resource',
-        generator: {
-          filename: 'css/[hash][ext][query]',
-        },
-      },
-
-      {
         test: /\.(png|jpg|gif)$/i,
+        type: 'asset/resource',
         use: [
           {
             loader: 'url-loader',
             options: {
-              limit: 8192,
+              limit: 4096,
             },
           },
         ],
-        // type: 'asset/resource',
       },
 
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource',
-        generator: {
-          filename: 'webfonts/[hash][ext][query]',
-        },
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[hash].[ext]',
+              outputPath: 'webfonts/',
+            },
+          },
+        ],
       },
 
       {
