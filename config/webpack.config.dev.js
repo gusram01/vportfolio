@@ -31,12 +31,14 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: 'src/index.pug',
+      template: 'src/pug/pages/index.pug',
       filename: './index.html',
       favicon: 'src/assets/favicon.ico',
       inject: false,
     }),
-    new CompressionPlugin(),
+    new CompressionPlugin({
+      exclude: /\.ico$/,
+    }),
   ],
 
   module: {

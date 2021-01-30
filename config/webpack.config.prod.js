@@ -16,10 +16,6 @@ module.exports = {
     assetModuleFilename: '[hash][ext][query]',
     publicPath: '/',
   },
-  // performance: {
-  //   maxEntrypointSize: 512000,
-  //   maxAssetSize: 512000,
-  // },
   optimization: {
     nodeEnv: 'production',
     concatenateModules: true,
@@ -41,12 +37,14 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: 'src/index.pug',
+      template: 'src/pug/pages/index.pug',
       filename: './index.html',
       favicon: 'src/assets/favicon.ico',
       inject: false,
     }),
-    new CompressionPlugin(),
+    new CompressionPlugin({
+      exclude: /\.ico$/,
+    }),
     new MiniCssExtractPlugin({
       filename: 'css/styles.[contenthash].css',
     }),

@@ -1,0 +1,9 @@
+mixin card(cardTitle)
+  article.card
+    .card__header
+      .card__avatar
+        block avatar
+      h3.card__title= cardTitle
+      block subtitle
+    .card__content
+      block content

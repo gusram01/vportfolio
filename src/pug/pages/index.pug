@@ -1,4 +1,7 @@
-extends ./pug/templates/template
+extends ../templates/template
+include ../mixins/link
+include ../mixins/card
+
 block content
   .resume#home
     //- <!--    Navbar    -->
@@ -11,13 +14,13 @@ block content
           aria-label="dark theme button"
         )
         span.separator#nav-separator(aria-hidden="true")
-        li.nav__item: a.nav__link.link.primary(href="#home") Projects
-        li.nav__item: a.nav__link.link.primary(href="#contact") Contact
+        +link('#home', 'Projects')
+        +link('#contact', 'Contact')
         .small-nav
-          li.nav__item: a.nav__link.link.primary(href="#about") About
-          li.nav__item: a.nav__link.link.primary(href="#skills") Tools
-          li.nav__item: a.nav__link.link.primary(href="#education") Education
-          li.nav__item: a.nav__link.link.primary(href="#experience") Experience
+          +link('#about', 'About')
+          +link('#skills', 'Tools')
+          +link('#education', 'Education')
+          +link('#experience', 'Experience')
         .ham#ham
           .ham__line.ham__top
           .ham__line.ham__mid
@@ -43,7 +46,7 @@ block content
 
       //- <!--   Section Projects    -->
       section.projects#projects
-        .card
+        article.card
           .card__header
             .card__avatar
               span.icon.myicon.projects-icon(
