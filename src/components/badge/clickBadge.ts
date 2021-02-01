@@ -29,14 +29,14 @@ export const clickBadge = (id: string, data: any) => () => {
       div.setAttribute('class', 'interactive-menu');
       div.innerHTML = !menuData
         ? ''
-        : `${
+        : `<span class="myicon times-icon close__interactive-menu"></span>${
             menuData[0].live &&
             `<p class="interactive-menu__item">
-            <a class="link secondary interactive-menu__link" href="${menuData[0].live}" rel="noreferrer" target="_blank">${menuData[0].tech} - Live App</a>
+            <a class="link interactive-menu__link" href="${menuData[0].live}" rel="noreferrer" target="_blank">${menuData[0].tech} - Live App</a>
           </p>`
           }
           <p class="interactive-menu__item">
-            <a class="link secondary interactive-menu__link" href="${
+            <a class="link interactive-menu__link" href="${
               menuData[0].repo
             }" rel="noreferrer" target="_blank">${
             menuData[0].tech

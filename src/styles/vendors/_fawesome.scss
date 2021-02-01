@@ -29,6 +29,11 @@
   font-weight: 900;
   font-family: 'Font Awesome 5 Solid';
 }
+.times-icon::before {
+  content: '\f00d';
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Solid';
+}
 .tools-icon::before {
   content: '\f7d9';
   font-weight: 900;

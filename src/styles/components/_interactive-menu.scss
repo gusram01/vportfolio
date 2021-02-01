@@ -1,10 +1,54 @@
 .interactive-menu {
-  padding: 0.5em 0 0;
+  // For a correct functionality relative parent is
+  // projects card content actions
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 80%;
+  min-height: 80px;
+  padding: 1em 0.5em;
+  transform: translateX(-50%);
+  color: transparent;
+  background: var(--color-secondary);
+  text-shadow: 0 0 0 var(--bg);
+  border-radius: $radius-half;
+  -webkit-animation: 250ms 1 forwards showInteractiveMenu;
+  animation: 250ms 1 forwards showInteractiveMenu;
+  -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
   &__item {
     display: flex;
     justify-content: center;
-    width: 100%;
-    min-height: 3rem;
-    margin: 1em auto;
+    min-width: 80%;
+    height: 50%;
+    font-size: 0.9em;
+  }
+  .close__interactive-menu {
+    position: absolute;
+    left: 8px;
+    top: 5px;
+    cursor: pointer;
+  }
+}
+
+@-webkit-keyframes showInteractiveMenu {
+  0% {
+    transform: translateX(-50%) translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes showInteractiveMenu {
+  0% {
+    transform: translateX(-50%) translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
   }
 }

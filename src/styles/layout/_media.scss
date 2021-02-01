@@ -7,15 +7,9 @@
 
 @media (min-width: 720px) {
   .projects {
-    min-height: 1000px;
     .card {
       &__content {
         max-width: 96%;
-      }
-      &__actions {
-        min-height: 160px;
-        padding-top: 0;
-        padding-bottom: 0;
       }
     }
   }
@@ -34,5 +28,8 @@
     .nav__item {
       margin: 4px 0;
     }
+  }
+  .interactive-menu {
+    width: 100%;
   }
 }
