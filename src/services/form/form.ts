@@ -2,9 +2,9 @@ import Swal from 'sweetalert2';
 import { formInfo } from '.';
 import { isDisabledButtonSend } from './isDisabledButtonSend';
 import { sendMail } from '../mail/sendMail';
-import { BodyMail } from '../../interfaces/BodyMail';
 
 const form = document.getElementById('form-contact') as HTMLFormElement;
+// eslint-disable-next-line import/no-mutable-exports
 let isLoading = false;
 
 const handleSubmit = (e: Event) => {
@@ -35,8 +35,7 @@ const handleSubmit = (e: Event) => {
         timer: 3500,
       }).then(() => form.reset());
     })
-    .catch((err: any) => {
-      console.error(err);
+    .catch(() => {
       Swal.fire({
         icon: 'error',
         title: 'Oopss, something went wrong',

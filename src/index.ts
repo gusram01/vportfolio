@@ -7,6 +7,8 @@ import { renderProjects } from './components/project';
 import { theme } from './services/theme';
 import { firstObs } from './services/nav/changeNavBg';
 import { showSmallMenu } from './services/nav/showMenu';
+import { sendCV } from './services/cv/cv';
+
 import {
   onSubmit,
   inputsListener,
@@ -56,6 +58,7 @@ new Glider(tools, {
     },
   ],
 });
+sendCV();
 getLegend();
 
 firstObs.observe(header);
