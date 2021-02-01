@@ -1,0 +1,10 @@
+include ../mixins/footerLink
+footer.footer
+  span.footer__legend#legend(aria-label="dev name and copyright glyph")
+  .footer__links
+    +footerLink('https://twitter.com/GusGusdev')
+      span.icon.myicon.twitter-icon(aria-label="redirect social media twitter")
+    +footerLink('https://github.com/gusram01')
+      span.icon.myicon.github-icon(aria-label="redirect social media github")
+    +footerLink('https://www.linkedin.com/in/gustavo-cesar-ramirez/?locale=en_US')
+      span.icon.myicon.linkedin-icon(aria-label="redirect social media linkedin")

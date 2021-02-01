@@ -58,7 +58,9 @@ export default async (req: NowRequest, res: NowResponse) => {
     res.end(
       JSON.stringify({
         ok: true,
-        data: `The CV was sended to your email with ID: ${info.messageId}`,
+        data: `The CV was sended to your email with ID: ${
+          info.messageId.split('@')[0]
+        }`,
       }),
     );
     return;

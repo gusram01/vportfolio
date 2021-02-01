@@ -1,0 +1,11 @@
+mixin footerLink(href)
+  a( 
+    href= href
+    class="footer__link link button-fab secondary"
+    rel="noreferrer"
+    target="_blank"
+  )
+    if block
+      block
+    else
+      href

@@ -1,0 +1,21 @@
+include ../mixins/link
+nav.nav#nav
+  ul.nav__container.small-screen
+    button(
+      type="button"
+      class="btn"
+      id="dark-theme"
+      aria-label="dark theme button"
+    )
+    span.separator#nav-separator(aria-hidden="true")
+    +link('#home', 'Projects')
+    +link('#contact', 'Contact')
+    .small-nav
+      +link('#about', 'About')
+      +link('#skills', 'Tools')
+      +link('#education', 'Education')
+      +link('#experience', 'Experience')
+    .ham#ham
+      .ham__line.ham__top
+      .ham__line.ham__mid
+      .ham__line.ham__bot

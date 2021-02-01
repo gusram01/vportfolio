@@ -1,0 +1,46 @@
+section.contact#contact
+  article.card
+    .card__header
+      .card__avatar
+        span.icon.myicon.contact-icon(
+          aria-label="icon contact"
+        )
+      h3.card__title Contact me
+    .card__content
+      form.form#form-contact
+        .form__field
+          input(
+            autocomplete="off"
+            type="text"
+            name="name"
+            aria-label="name"
+          )
+          label(for="name") Name
+          p
+        .form__field
+          input(
+            autocomplete="off"
+            type="email"
+            name="email"
+            aria-label="email"
+          )
+          label( for="email") Email
+          p
+        .form__field
+          textarea(
+            autocomplete="off"
+            name="msg"
+            aria-label="message"
+            spellcheck="true"
+            maxlength="124"
+            rows="3"
+          )
+          label( htmlFor="msg") Message
+          p
+        .form__button-send
+          input(
+            class="btn button-outline button-block primary"
+            type="submit"
+            value="Send"
+            id="send"
+          )

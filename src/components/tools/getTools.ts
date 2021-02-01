@@ -16,7 +16,6 @@ import rxjsSvg from './html/rxjs.html';
 import typescriptSvg from './html/typescript.html';
 import vueSvg from './html/vue.html';
 import webpackSvg from './html/webpack.html';
-import { pauseAnimation } from '.';
 
 const tools = [
   { title: 'angular', html: angularSvg },
@@ -41,7 +40,6 @@ const tools = [
 
 export const getTools = (container: HTMLDivElement) => {
   const fragment = document.createDocumentFragment();
-  // pauseAnimation(container);
 
   tools.forEach((tool) => {
     const div = document.createElement('div');
