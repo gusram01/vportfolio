@@ -40,7 +40,7 @@ const handleSendCv = () => {
       if (result.dismiss === 'cancel') {
         const anchor = document.createElement('a');
         anchor.href =
-          'https://firebasestorage.googleapis.com/v0/b/gus-portfolio.appspot.com/o/gustavo-ramirez-dev-cv-onlyinfo.pdf?alt=media&token=6336e610-0bbf-4bc3-897d-a20a45a6d55a';
+          'https://firebasestorage.googleapis.com/v0/b/gus-portfolio.appspot.com/o/gustavo-ramirez-dev-cv-onlyinfo.pdf?alt=media&token=66755157-dbac-4148-b1a8-f69b2a4f19ac';
         anchor.setAttribute('download', 'gus-ramirez-dev-cv.pdf');
         anchor.setAttribute('target', '_blank');
         anchor.className = 'hidden';
