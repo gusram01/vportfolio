@@ -39,8 +39,7 @@ export default async (req: NowRequest, res: NowResponse) => {
       from: '"admin" <gram.io.dev@gmail.com>',
       to: email,
       subject: 'Gus Ramírez CV',
-      html:
-        '<p>This email was sent because the CV was requested from <a href="https://gusramirez.dev">gusramirez.dev</a></p><p>Please see atachments</p>',
+      html: '<p>This email was sent because the CV was requested from <a href="https://gusramirez.dev">gusramirez.dev</a></p><p>Please see atachments</p>',
       attachments: [
         {
           filename: 'gustavo-ramirez-dev-cv.pdf',
@@ -64,7 +63,7 @@ export default async (req: NowRequest, res: NowResponse) => {
       }),
     );
     return;
-  } catch (err) {
+  } catch (err: any) {
     res.statusCode = 500;
     res.end(JSON.stringify({ ok: false, message: err.message }));
   }

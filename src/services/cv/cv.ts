@@ -4,8 +4,7 @@ import { sendMail } from './sendCv';
 const handleSendCv = () => {
   Swal.fire({
     title: 'Gus Ramírez CV',
-    html:
-      '<p><em>Download</em> CV without phone/email</p><p>or</p><p>Send <em>email</em> with all data</p>',
+    html: '<p><em>Download</em> CV without phone/email</p><p>or</p><p>Send <em>email</em> with all data</p>',
     showCancelButton: true,
     confirmButtonText: 'Send email ',
     cancelButtonText: 'Download',
@@ -40,7 +39,7 @@ const handleSendCv = () => {
       if (result.dismiss === 'cancel') {
         const anchor = document.createElement('a');
         anchor.href =
-          'https://firebasestorage.googleapis.com/v0/b/gus-portfolio.appspot.com/o/gustavo-ramirez-dev-cv-onlyinfo.pdf?alt=media&token=66755157-dbac-4148-b1a8-f69b2a4f19ac';
+          'https://firebasestorage.googleapis.com/v0/b/gus-portfolio.appspot.com/o/gustavo-ramirez-dev-cv-withcontact.pdf?alt=media&token=935d9822-8a9b-4415-bfcd-d3980d19f07b';
         anchor.setAttribute('download', 'gus-ramirez-dev-cv.pdf');
         anchor.setAttribute('target', '_blank');
         anchor.className = 'hidden';
@@ -69,7 +68,9 @@ const handleSendCv = () => {
 };
 
 export const sendCV = () => {
-  const cvButton = document.getElementById('cv-button') as HTMLButtonElement;
+  const cvButtons = document.querySelectorAll('.cv-button');
 
-  return cvButton.addEventListener('click', handleSendCv);
+  cvButtons.forEach((button) => {
+    button.addEventListener('click', handleSendCv);
+  });
 };

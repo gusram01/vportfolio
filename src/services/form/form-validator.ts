@@ -34,7 +34,7 @@ function nativeValidity(this: HTMLInputElement | HTMLTextAreaElement) {
 }
 
 export const inputsListener = () => {
-  name.addEventListener('input', nativeValidity);
-  email.addEventListener('input', nativeValidity);
-  msg.addEventListener('input', nativeValidity);
+  name && name.addEventListener('input', nativeValidity);
+  email && email.addEventListener('input', nativeValidity);
+  msg && msg.addEventListener('input', nativeValidity);
 };

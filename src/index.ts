@@ -30,22 +30,25 @@ renderProjects()
   })
   .catch(console.error);
 showSmallMenu();
+
 theme(darky);
+getTools(tools);
+
 inputsListener();
 isDisabledButtonSend();
 onSubmit();
-getTools(tools);
+
 // eslint-disable-next-line no-new
 new Glider(tools, {
-  slidesToShow: 1,
+  slidesToShow: 2,
   slidesToScroll: 'auto',
   draggable: true,
+  rewind: true,
   dots: '.dots',
   arrows: {
     prev: '.glider-prev',
     next: '.glider-next',
   },
-
   responsive: [
     {
       // screens greater than >= 360px
@@ -62,4 +65,3 @@ sendCV();
 getLegend();
 
 firstObs.observe(header);
-export { onSubmit, theme };

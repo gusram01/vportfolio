@@ -6,7 +6,9 @@
   width: 100%;
   min-height: 350px;
   border-radius: 0 0 $radius-default $radius-default;
-  background: linear-gradient(var(--bg5) 0, var(--bg) 15%);
+}
+.contact {
+  width: 100%;
 }
 .footer__links {
   position: relative;
@@ -14,7 +16,8 @@
   justify-content: center;
   flex-wrap: wrap;
   list-style: none;
-  margin: 3em auto;
+  margin: 3em auto 0;
+
   &::after {
     right: 0;
   }
@@ -37,5 +40,6 @@
   margin: 0.5rem;
 }
 .footer__legend {
+  margin: 2em auto;
   font-style: italic;
 }

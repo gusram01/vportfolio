@@ -5,7 +5,7 @@
   justify-content: center;
   width: 100%;
   min-height: 300px;
-  background: var(--bg5);
+  background: var(--bg3);
   -webkit-clip-path: polygon(
     0 calc(1vw * var(--shape1)),
     50% 0,
@@ -23,8 +23,10 @@
     50% calc(100% - (var(--shape1) * 1vw)),
     0 100%
   );
+
   margin-top: calc(-1vw * var(--shape1));
-  margin-bottom: calc(-1vw * var(--shape1));
+  margin-bottom: calc(2vw * var(--shape1));
+
   .card__content {
     padding-left: 2em;
     padding-right: 2em;

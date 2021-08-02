@@ -45,6 +45,6 @@ const handleSubmit = (e: Event) => {
     .finally(() => (isLoading = false));
 };
 
-const onSubmit = () => form.addEventListener('submit', handleSubmit);
+const onSubmit = () => form && form.addEventListener('submit', handleSubmit);
 
 export { onSubmit, isLoading as buttonSendFlag };

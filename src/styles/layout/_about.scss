@@ -1,0 +1,14 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: $shapes-margin;
+  .card__content {
+    padding-left: 1em;
+    padding-right: 1em;
+    p {
+      line-height: 2.5;
+    }
+  }
+}

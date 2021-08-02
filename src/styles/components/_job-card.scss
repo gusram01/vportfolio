@@ -1,0 +1,15 @@
+.job-card {
+  margin-top: 1em;
+  padding-bottom: 2em;
+
+  h4,
+  h5 {
+    margin-top: 0;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}

@@ -36,9 +36,9 @@
   font-display: swap;
 }
 
-@import './styles/helpers/globals-helpers';
-@import './styles/base/globals-base';
+@import './styles/helpers';
+@import './styles/base';
+@import './styles/layout';
 @import './styles/themes/themes';
 @import './styles/vendors/fawesome';
-@import './styles/components/globals-components';
-@import './styles/layout/globals-layout';
+@import './styles/components';

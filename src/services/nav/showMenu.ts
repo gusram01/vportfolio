@@ -20,9 +20,9 @@ export const showSmallMenu = () => {
       lines.forEach((item) => item.classList.toggle('show'));
       smallNav?.classList.toggle('show');
       if (smallNav?.className.includes('show')) {
-        smallNav.addEventListener(
+        nav.addEventListener(
           'click',
-          () => {
+          (event: MouseEvent) => {
             smallNav.classList.remove('show');
             lines.forEach((item) => item.classList.remove('show'));
           },

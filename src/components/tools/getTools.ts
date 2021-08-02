@@ -18,24 +18,24 @@ import vueSvg from './html/vue.html';
 import webpackSvg from './html/webpack.html';
 
 const tools = [
-  { title: 'angular', html: angularSvg },
-  { title: 'css3', html: css3Svg },
-  { title: 'github', html: githubSvg },
-  { title: 'html5', html: html5Svg },
-  { title: 'java', html: javaSvg },
+  { title: 'typescript', html: typescriptSvg },
   { title: 'javascript', html: javascriptSvg },
+  { title: 'python', html: pythonSvg },
+  { title: 'java', html: javaSvg },
+  { title: 'github', html: githubSvg },
+  { title: 'nodejs', html: nodejsSvg },
+  { title: 'pug', html: pugSvg },
+  { title: 'webpack', html: webpackSvg },
+  { title: 'angular', html: angularSvg },
+  { title: 'vue', html: vueSvg },
+  { title: 'rxjs', html: rxjsSvg },
+  { title: 'html5', html: html5Svg },
+  { title: 'css3', html: css3Svg },
+  { title: 'nextjs', html: nextjsSvg },
+  { title: 'react', html: reactSvg },
   { title: 'mongodb', html: mongodbSvg },
   { title: 'mysql', html: mysqlSvg },
-  { title: 'nextjs', html: nextjsSvg },
-  { title: 'nodejs', html: nodejsSvg },
   { title: 'postgresql', html: postgresqlSvg },
-  { title: 'pug', html: pugSvg },
-  { title: 'python', html: pythonSvg },
-  { title: 'react', html: reactSvg },
-  { title: 'rxjs', html: rxjsSvg },
-  { title: 'typescript', html: typescriptSvg },
-  { title: 'vue', html: vueSvg },
-  { title: 'webpack', html: webpackSvg },
 ];
 
 export const getTools = (container: HTMLDivElement) => {

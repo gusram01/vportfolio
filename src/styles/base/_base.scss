@@ -3,6 +3,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding: 60px 0 0 0;
 }
+
 *,
 *::after,
 *::before {
@@ -20,8 +21,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: var(--bg2);
   color: var(--font);
-  overflow-x: hidden;
-  overflow-y: auto;
+  transition: background 150ms ease, color 150ms ease;
 }
 section {
   scroll-snap-align: start none;
@@ -47,5 +47,5 @@ svg {
 }
 
 .icon {
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
