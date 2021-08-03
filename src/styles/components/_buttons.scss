@@ -2,8 +2,10 @@
   font-size: 0.9em;
   font-weight: 600;
   line-height: 1.3em;
+  opacity: 1;
+
   &:hover {
-    opacity: 1;
+    opacity: 0.9;
     transition: opacity 250ms ease;
   }
   &:focus {
@@ -12,12 +14,13 @@
 }
 .link {
   font-weight: 600;
+  opacity: 1;
   &:visited {
     color: currentColor;
   }
   &:hover,
   &:focus {
-    opacity: 1;
+    opacity: 0.75;
   }
 }
 .btn,
