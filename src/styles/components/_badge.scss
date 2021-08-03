@@ -11,9 +11,9 @@
   font-weight: 500;
   user-select: none;
   cursor: pointer;
-  opacity: 0.9;
+  opacity: 1;
   &:hover {
-    opacity: 1;
-    transition: opacity 150ms ease-in;
+    opacity: 0.9;
+    transition: opacity 150ms;
   }
 }
