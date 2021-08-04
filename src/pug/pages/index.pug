@@ -3,35 +3,21 @@ extends ../templates/template
 block content
   .resume#home
 
-    //- <!--    Navbar    -->
     include ../components/navBar    
 
-    //- <!--    Header    -->
     include ../components/header
         
-    //- <!--    Main    -->
     main
 
-      //- <!--   Section Projects    -->
       include ../components/projects
 
-      //- <!--   Section Skills    -->
       include ../components/skills
         
-      //- <!--   Section Experience    -->
       include ../components/experience
 
-      //- <!--   Section Education    -->
       include ../components/education
       
+      include ../components/about
     
-    //- <!--   Section About    -->
-    include ../components/about
       
-    //- <!--    Footer    -->
     include ../components/footer
-
-//- <!--    Inject scripts    -->
-block scripts 
-  each js in htmlWebpackPlugin.files.js
-    script(type='text/javascript', src=js, async)

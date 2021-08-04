@@ -1,0 +1,22 @@
+.chip {
+  display: inline-block;
+  margin: 4px;
+  padding: 0.2em 1em;
+  background-color: var(--color-primary);
+  color: white;
+
+  border-radius: 500px;
+  text-align: center;
+
+  font-size: 0.85em;
+  font-weight: 400;
+
+  user-select: none;
+
+  opacity: 1;
+
+  &:hover {
+    opacity: 0.9;
+    transition: opacity 150ms;
+  }
+}

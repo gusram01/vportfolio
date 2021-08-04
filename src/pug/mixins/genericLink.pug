@@ -1,0 +1,11 @@
+mixin genericLink(href)
+  a( 
+    href= href
+    class="link secondary"
+    rel="noreferrer"
+    target="_blank"
+  )&attributes(attributes)
+    if block
+      block
+    else
+      = href

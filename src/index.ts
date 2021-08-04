@@ -1,13 +1,11 @@
-import './styles.scss';
-import './assets/glider.min.css';
 import Glider from 'glider-js';
 import { getLegend } from './ts/legend';
-import { getTools } from './components/tools';
-import { renderProjects } from './components/project';
 import { theme } from './services/theme';
 import { firstObs } from './services/nav/changeNavBg';
 import { showSmallMenu } from './services/nav/showMenu';
 import { sendCV } from './services/cv/cv';
+
+import './styles.scss';
 
 import {
   onSubmit,
@@ -17,22 +15,11 @@ import {
 
 const darky = document.getElementById('dark-theme') as HTMLButtonElement;
 const header = document.getElementById('header') as HTMLElement;
-const projectsContainer = document.getElementById(
-  'projects-container',
-) as HTMLDivElement;
 const tools = document.getElementById('tools') as HTMLDivElement;
 
-renderProjects()
-  .then((obj) => {
-    projectsContainer.appendChild(obj!.fragment.cloneNode(true));
-    obj!.accordionListeners.forEach((item) => item());
-    obj!.actionsListeners.forEach((item) => item());
-  })
-  .catch(console.error);
 showSmallMenu();
 
 theme(darky);
-getTools(tools);
 
 inputsListener();
 isDisabledButtonSend();

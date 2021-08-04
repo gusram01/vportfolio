@@ -1,10 +1,58 @@
-section.projects#projects
-  article.card
-    .card__header
-      .card__avatar
-        span.icon.myicon.projects-icon(
-          aria-label="icon projects"
-        )
-      h3.card__title Projects
-    
-    .card__content#projects-container
+include ../mixins/sectionLayout
+include ../mixins/genericLink
+include ../mixins/projectCard
+include ../mixins/chip
+
++sectionLayout('projects', 'Projects', 'icon projects', 'projects-icon')
+  +projectCard(
+    'Aiba.mx', 
+    'https://firebasestorage.googleapis.com/v0/b/gus-portfolio.appspot.com/o/images%2Faiba.png?alt=media&token=6e1c7c01-4882-4a4a-8f79-ef41f6b11579',
+    'aiba landing page image'
+    )
+    p.content__description Landing page for a fulfillment project, built and developed for Coconutt startup; this is the start point for the public, behind the scene the project add a front office and a back office.
+
+    p.content__links 
+      +genericLink('https://aiba.mx')
+        
+    p.content__chips 
+      +chip('Pug')
+      +chip('Javascript')
+      +chip('Sass')
+
+  +projectCard(
+    'Aerolab challenge', 
+    'https://firebasestorage.googleapis.com/v0/b/gus-portfolio.appspot.com/o/images%2Faerolab.png?alt=media&token=4d44560c-094a-4a08-b47c-79271fb41d06',
+    'aerolab challenge page image'
+    )
+    p.content__description Personal project to apply for the Aerolab challenge, and it's about building a mini-application for clients that implements a rewards program with redeemed points.
+
+    p.content__links 
+      +genericLink('https://aerolab-mu.vercel.app/')
+        span live view
+        
+      +genericLink('https://github.com/gusram01/aerolab')
+        span repo
+        
+    p.content__chips 
+      +chip('Vue.js')
+      +chip('Javascript')
+      +chip('Sass')
+
+  +projectCard(
+    'Ionic project', 
+    'https://firebasestorage.googleapis.com/v0/b/gus-portfolio.appspot.com/o/images%2Fionic.png?alt=media&token=4b547cb1-1aa3-4259-8408-76f8f439ec18',
+    'ionic app image'
+    )
+    p.content__description Personal project to deliver an ionic application, built on top of vue.js. It's about running a contractor business that requires an agenda and messaging clients with some relevant information.
+
+    p.content__links 
+      +genericLink('https://te-impulsa.vercel.app/home')
+        span live view
+
+      +genericLink('https://github.com/gusram01/te-impulsa')
+        span repo
+        
+    p.content__chips 
+      +chip('Ionic')
+      +chip('Vue.js')
+      +chip('Javascript')

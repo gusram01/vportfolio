@@ -1,14 +1,45 @@
-section.tools#skills
-        article.card
-          .card__header
-            .card__avatar
-              span.icon.myicon.tools-icon(
-                aria-label="icon skills"
-              )
-            h3.card__title Work with
-          .card__content
-            .glider-contain
-              .tools-inside.glider#tools
-              button.glider-prev(aria-label="Previous") «
-              button.glider-next(aria-label="Next") »
-              .dots(role="tablist")
+include ../mixins/sectionLayout
+
++sectionLayout('skills','Work with', 'icon skills', 'tools-icon' )
+  .glider-contain
+    .tools.glider#tools
+      .tool(data-title="typescript")
+        include ./tools/typescript
+      .tool(data-title="javascript")
+        include ./tools/javascript
+      .tool(data-title="python")
+        include ./tools/python
+      .tool(data-title="java")
+        include ./tools/java
+      .tool(data-title="nodejs")
+        include ./tools/nodejs
+      .tool(data-title="angular")
+        include ./tools/angular
+      .tool(data-title="vue")
+        include ./tools/vue
+      .tool(data-title="rxjs")
+        include ./tools/rxjs
+      .tool(data-title="github")
+        include ./tools/github
+      .tool(data-title="webpack")
+        include ./tools/webpack
+      .tool(data-title="pug")
+        include ./tools/pug
+      .tool(data-title="html5")
+        include ./tools/html5
+      .tool(data-title="css3")
+        include ./tools/css3
+      .tool(data-title="nextjs")
+        include ./tools/nextjs
+      .tool(data-title="react")
+        include ./tools/react
+      .tool(data-title="mongodb")
+        include ./tools/mongodb
+      .tool(data-title="mysql")
+        include ./tools/mysql
+      .tool(data-title="postgresql")
+        include ./tools/postgresql
+
+    button.glider-prev(aria-label="Previous") «
+    button.glider-next(aria-label="Next") »
+    .dots(role="tablist")

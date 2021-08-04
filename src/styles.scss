@@ -36,9 +36,9 @@
   font-display: swap;
 }
 
+@import './styles/vendors';
 @import './styles/helpers';
 @import './styles/base';
 @import './styles/layout';
 @import './styles/themes/themes';
-@import './styles/vendors/fawesome';
 @import './styles/components';

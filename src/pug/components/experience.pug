@@ -1,35 +1,32 @@
-section.experience#experience
-  article.card
-    .card__header
-      .card__avatar
-        span.icon.myicon.experience-icon(aria-label="icon experience")
-      h3.card__title Experience
-    .card__content
-      article.job-card
-        .job-card__header
-          h4 Frontend Jr at Coconutt (CDMX)
-          h5 Remote work since 03/2021
-        .job-card__content
-          ul.job-card__items
-            li I work as a part of the web development team, which is formed by a backend, frontend, and mobile.
-            li I have participated in projects that use angular and vuejs frameworks.
-            li To work within a startup, we need to acquire a lot of knowledge and that's why I worked on scripting and scraping with Python, deep dive into the topic of Docker, and studied software architecture and object-oriented design.
-        .job-card__actions
-          a.link.secondary(href="https://coconutt.io" target="_blank" rel="noopener no referrer") coconut.io
-          a.link.secondary(href="https://www.linkedin.com/company/coconutt/about/" target="_blank" rel="noopener no referrer") coconutt-linkedin
-          a.link.secondary(href="https://aiba.mx" target="_blank" rel="noopener no referrer") aiba.mx
-      
+include ../mixins/sectionLayout
+include ../mixins/badgeCv
 
-      article.job-card
-        .job-card__header
-          h4 Freelance (CDMX)
-          h5 Remote work since 06/2020
-        .job-card__content
-          ul.job-card__items
-            li I am focused on building and developing web applications for my clients.
-            li I mainly work with Javascript technologies and I can say that I work effortlessly with frameworks like Express, Hapi.js, Angular, Ionic, Vue.js y Quasar.
-            li My learning roots include HTML, CSS, Vanilla Javascript, Typescript y Git, and in my day to day, I handle tools such as Webpack, Pug, SASS, RxJS, Jest.
-            li I really like developing with native Css, PostCss and/or SASS, I also worked with tools like Bootstrap, Material, and Tailwind, etc.
++sectionLayout('experience', 'Experience', 'icon experience', 'experience-icon')
+  article.job-card
+    .job-card__header
+      h4 Frontend Jr at Coconutt (CDMX)
+      h5 Remote work since 03/2021
+    .job-card__content
+      ul.job-card__items
+        li I work as a part of the web development team, which is formed by a backend, frontend, and mobile.
+        li I have participated in projects that use angular and vuejs frameworks.
+        li To work within a startup, we need to acquire a lot of knowledge and that's why I worked on scripting and scraping with Python, deep dive into the topic of Docker, and studied software architecture and object-oriented design.
+    .job-card__actions
+      a.link.secondary(href="https://coconutt.io" target="_blank" rel="noopener no referrer") coconut.io
+      a.link.secondary(href="https://www.linkedin.com/company/coconutt/about/" target="_blank" rel="noopener no referrer") coconutt-linkedin
+      a.link.secondary(href="https://aiba.mx" target="_blank" rel="noopener no referrer") aiba.mx
+  
 
-        
-      button.badge.link.cv-button Get a copy of my resume
+  article.job-card
+    .job-card__header
+      h4 Freelance (CDMX)
+      h5 Remote work since 06/2020
+    .job-card__content
+      ul.job-card__items
+        li I am focused on building and developing web applications for my clients.
+        li I mainly work with Javascript technologies and I can say that I work effortlessly with frameworks like Express, Hapi.js, Angular, Ionic, Vue.js y Quasar.
+        li My learning roots include HTML, CSS, Vanilla Javascript, Typescript y Git, and in my day to day, I handle tools such as Webpack, Pug, SASS, RxJS, Jest.
+        li I really like developing with native Css, PostCss and/or SASS, I also worked with tools like Bootstrap, Material, and Tailwind, etc.
+
+    
+  +badgeCv('Get a copy of my resume')

@@ -1,0 +1,14 @@
+include ./customIcon
+
+mixin sectionLayout(identifier, title, iconLabel, iconClass)
+  section(class= identifier id= identifier)
+    article.card
+      .card__header
+        .card__avatar
+          +customIcon(iconLabel)(class= iconClass)
+
+        h3.card__title= title
+        
+      .card__content
+          if block
+            block

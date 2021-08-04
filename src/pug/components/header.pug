@@ -1,10 +1,12 @@
+include ../mixins/badgeCv
+
 header.header.wo-bg#header
 
   .title
     h1 Gus Ramírez
     h2 Front-end / Backend
 
-    button.badge.link.cv-button Get a copy of my resume
+    +badgeCv('Get a copy of my resume')
     
   
   .art

@@ -1,14 +1,7 @@
-section.about#about
-  article.card
-    .card__header
-      .card__avatar
-        span.icon.myicon.about-icon(
-          aria-label="icon about"
-          loading="lazy"
-        )
-      h3.card__title About
-    .card__content
-        p I am a junior developer with a lot of joy and enthusiasm for software development, I studied physical engineering many years ago but now I want to specialize in finding and delivering digital solutions to clients.
-        p My strong skill is for Javascript, either backend or front end, however, I like to achieve knowledge about new technologies and I enjoy learning about new programming languages.
-        p Today I can work with no effort on technologies such as HTML, CSS, Vanilla Javascript,  TypeScript, Git / Github, Webpack, Pug, SASS, Jest, RxJs, Angular, Vue, and many others that help me to build web applications.
-        p In addition, I started with Python and Kotlin to expand my skills and for knowing other perspectives to find some other paths to solve problems.
+include ../mixins/sectionLayout
+
++sectionLayout('about', 'About', 'icon about', 'about-icon')
+  p I am a junior developer with a lot of joy and enthusiasm for software development, I studied physical engineering many years ago but now I want to specialize in finding and delivering digital solutions to clients.
+  p My strong skill is for Javascript, either backend or front end, however, I like to achieve knowledge about new technologies and I enjoy learning about new programming languages.
+  p Today I can work with no effort on technologies such as HTML, CSS, Vanilla Javascript,  TypeScript, Git / Github, Webpack, Pug, SASS, Jest, RxJs, Angular, Vue, and many others that help me to build web applications.
+  p In addition, I started with Python and Kotlin to expand my skills and for knowing other perspectives to find some other paths to solve problems.

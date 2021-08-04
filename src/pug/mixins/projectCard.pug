@@ -1,0 +1,11 @@
+mixin projectCard(projectTitle, imageSrc, imageAlt)
+  article.project-card
+    .project-card__image
+      img(src= imageSrc alt= imageAlt width="600" loading="lazy")
+
+    .project-card__header
+      h4.project-card__title= projectTitle
+      
+    .project-card__content
+      if block
+        block
