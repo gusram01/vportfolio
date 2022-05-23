@@ -4,13 +4,30 @@ include ../mixins/badgeCv
 +sectionLayout('experience', 'Experience', 'icon experience', 'experience-icon')
   article.job-card
     .job-card__header
-      h4 Frontend Jr at Coconutt (CDMX)
-      h5 Remote work since 03/2021
+      h4 Frontend Engineer at Aplazo (CDMX)
+      h5 Remote work since 11/2021
     .job-card__content
       ul.job-card__items
-        li I work as a part of the web development team, which is formed by a backend, frontend, and mobile.
-        li I have participated in projects that use angular and vuejs frameworks.
-        li To work within a startup, we need to acquire a lot of knowledge and that's why I worked on scripting and scraping with Python, deep dive into the topic of Docker, and studied software architecture and object-oriented design.
+        li As a Aplazo Front end Engineer, I take a place in B2B development team.
+        li I work mainly with the Angular framework to develop the dashboard of the merchants, 
+        li In the last refactoring I take a code that was highly coupled to the framework for a better approach by splitting the domain into its own library, free of frameworks and defining use-cases to maintain and scale the app in the future.
+        li In the same refactor the idea was work with presentational components that orchestrate all the dependency injection and work with dumb components to achieve all the interaction with users.
+        li It is remarkable that all the dumb components were worked on a library that uses the atomic design as better and cleaner way to working.
+        li With this approach, I believe that the shell application that merges all the domain logic and infrastructure implementation can have a better maintainability and scalability of the project.
+    .job-card__actions
+      a.link.secondary(href="https://merchantui.aplazo.mx" target="_blank" rel="noopener no referrer") dashboard merchants aplazo
+      a.link.secondary(href="https://aplazo.mx" target="_blank" rel="noopener no referrer") aplazo.mx
+  
+  article.job-card
+    .job-card__header
+      h4 Frontend Dev at Coconutt (CDMX)
+      h5 03/2021 to 11/2021
+    .job-card__content
+      ul.job-card__items
+        li  Most of my participation was on creating custom frontend web applications for the customers (final users). 
+        li  In my day to day I was involved working with Vue, Angular and clean architectures to build dashboards, SPA's, landing pages and improve some projects that was built before my arrived. For example we can built a landing  page with template engines, vanilla Javascript, SASS and bundled the app with webpack, but for other projects we built on top of Angular framework and used CD with docker images and GH actions to accomplished the task.
+        li  The team was little but we preferred to work around agile methodologies, like scrum and Kanban. 
+        li  For some tasks besides to deliver the code and the tests we needed to ensure that the Docker images and the CD pipeline completed successfully.
     .job-card__actions
       a.link.secondary(href="https://coconutt.io" target="_blank" rel="noopener no referrer") coconut.io
       a.link.secondary(href="https://www.linkedin.com/company/coconutt/about/" target="_blank" rel="noopener no referrer") coconutt-linkedin
@@ -23,10 +40,9 @@ include ../mixins/badgeCv
       h5 Remote work since 06/2020
     .job-card__content
       ul.job-card__items
-        li I am focused on building and developing web applications for my clients.
-        li I mainly work with Javascript technologies and I can say that I work effortlessly with frameworks like Express, Hapi.js, Angular, Ionic, Vue.js y Quasar.
+        li I am focused on building and developing web applications for my clients. Recently I start to use Laravel as tool that let me to do my job.
+        li I mainly work with Javascript technologies and I can say that I work effortlessly with frameworks like Laravel, Express, Hapi.js, Angular, Ionic, Vue.js and Quasar.
         li My learning roots include HTML, CSS, Vanilla Javascript, Typescript y Git, and in my day to day, I handle tools such as Webpack, Pug, SASS, RxJS, Jest.
         li I really like developing with native Css, PostCss and/or SASS, I also worked with tools like Bootstrap, Material, and Tailwind, etc.
-
     
   +badgeCv('Get a copy of my resume')
